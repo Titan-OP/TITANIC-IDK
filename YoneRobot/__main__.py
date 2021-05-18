@@ -105,7 +105,7 @@ Helpful Commands [:](https://telegra.ph/file/e3709eb1434170f628643.jpg)
 """
 yone_IMG = "https://telegra.ph/file/5686a109def3c0cfd8229.jpg"
 HELP_IMG = "https://telegra.ph/file/053356a58a4da844d8e05.jpg"
-HELP_MSG = "
+HELP_MSG = "Click the button below to get help manu in your pm"
 
 DONATE_STRING = """no need of donations,support us by joining @nezukosupport1"""
 
@@ -424,7 +424,7 @@ def get_help(update: Update, context: CallbackContext):
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "Here is the available help for the *{}* module:\n".format(
+            "〔 *{}* 〕\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
@@ -433,7 +433,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="《Back》", callback_data="help_back")]]
             ),
         )
 
@@ -656,7 +656,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "OwO, I'm online")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
