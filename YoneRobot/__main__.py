@@ -358,8 +358,8 @@ def yone_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_nezuko's licensed under the GNU General Public License v3.0_
-                 \nany questions about nezuko [support](.
-                 \n\nIf you have any question about yone, let us know at .""",
+                 \nany questions about nezuko come to [support](t.me/nezukosupport1) .
+                 \n\nkeep updated about nezuko by joining [updates](t.me/nezukoupdates1) channel.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
