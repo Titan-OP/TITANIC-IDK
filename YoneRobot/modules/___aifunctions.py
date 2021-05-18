@@ -3,8 +3,8 @@
 
 import requests
 url = "https://iamai.p.rapidapi.com/ask"
-from AsunaRobot import telethn, OWNER_ID
-from AsunaRobot.events import register
+from YoneRobot import telethn, OWNER_ID
+from YoneRobot.events import register
 from telethon import events
 from telethon import types
 from telethon.tl import functions
