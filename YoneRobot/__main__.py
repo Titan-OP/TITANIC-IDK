@@ -104,6 +104,8 @@ Helpful Commands [:](https://telegra.ph/file/e3709eb1434170f628643.jpg)
 》 /help: Sends this message; I'll tell you more about myself!
 """
 yone_IMG = "https://telegra.ph/file/5686a109def3c0cfd8229.jpg"
+HELP_IMG = "https://telegra.ph/file/053356a58a4da844d8e05.jpg"
+HELP_MSG = "
 
 DONATE_STRING = """no need of donations,support us by joining @nezukosupport1"""
 
@@ -379,33 +381,6 @@ def yone_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-
-@run_async
-def Source_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "source_":
-        query.message.edit_text(
-            text=""" Hi..🤗 I'm *yone*
-                 \nHere is the [Source Code](https://github.com/Noob-kittu/YoneRobot) .""",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
-                 ]
-                ]
-            ),
-        )
-    elif query.data == "source_back":
-        query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
-        )
-
 @run_async
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -431,8 +406,8 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+        update.effective_message.reply_photo(
+            HELP_IMG, HELP_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
