@@ -356,7 +356,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-Yone AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+Nezuko AI 3.0 CAN AI CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
