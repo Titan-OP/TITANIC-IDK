@@ -42,7 +42,7 @@ async def fetch(url):
 yone_chats = []
 en_chats = []
 
-@Yone.on_message(
+@Nezuko.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -88,7 +88,7 @@ async def hmm(_, message):
         )
 
 
-@Yone.on_message(
+@Nezuko.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -196,13 +196,13 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await Yone.send_chat_action(message.chat.id, "typing")
+            await Nezuko.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
 
 
-@Yone.on_message(
+@Nezuko.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -268,13 +268,13 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Yone.send_chat_action(message.chat.id, "typing")
+        await Nezuko.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
-@Yone.on_message(
+@Nezuko.on_message(
     filters.regex("nezuko|nezuko|Nezuko|Nezuko|Nezuko")
     & ~filters.bot
     & ~filters.via_bot
@@ -348,7 +348,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await Yone.send_chat_action(message.chat.id, "typing")
+        await Nezuko.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
