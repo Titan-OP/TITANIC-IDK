@@ -14,7 +14,7 @@ from pyrogram import filters
 from YoneRobot import BOT_ID
 from YoneRobot.helper_extra.aichat import add_chat, get_session, remove_chat
 from YoneRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from YoneRobot import pbot as Yone
+from YoneRobot import pbot as Nezuko
 
 translator = google_translator()
 import requests
@@ -116,7 +116,7 @@ async def hmm(client, message):
         test = msg
         test = test.replace("nezuko", "Aco")
         test = test.replace("nezuko", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@YoneRobot&ownername=@A_viyu"
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@nezuko13_bot&ownername=@kaneki_ded2"
 
         try:
             r = requests.request("GET", url=URL)
@@ -177,9 +177,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("yone", "Aco")
-        test = test.replace("yone", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@YoneRobot&ownername=@A_viyu"
+        test = test.replace("nezuko", "Aco")
+        test = test.replace("nezuko", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@nezuko13_bot&ownername=@kaneki_ded2"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -251,8 +251,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("yone", "Aco")
-    test = test.replace("yone", "Aco")
+    test = test.replace("nezuko", "Aco")
+    test = test.replace("nezuko", "Aco")
     URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@nezuko13_bot&ownername=@kaneki_ded2"
     try:
         r = requests.request("GET", url=URL)
@@ -275,7 +275,7 @@ async def inuka(client, message):
 
 
 @Yone.on_message(
-    filters.regex("yone|yone|Yone|Yone|Yone")
+    filters.regex("nezuko|nezuko|Nezuko|Nezuko|Nezuko")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
