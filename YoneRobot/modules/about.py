@@ -1,5 +1,5 @@
  # created by @kaneki_ded2
-import asynci
+import asyncio
 from YoneRobot.events import register
 
 @register(pattern=("/about"))
