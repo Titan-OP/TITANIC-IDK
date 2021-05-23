@@ -1,12 +1,7 @@
-import random 
+ # created by @kaneki_ded2
 import asynci
-from telethon import event 
+from YoneRobot.events import register
 
-@client.on(events.NewMessage(pattern="^/about"))
-
-async def_(event):
-  if event.fwd_from:
-     return
-  h=(random.randrange(1))
-  if h==1:
-     await event.edit(f"hi there")
+@register(pattern=("/about"))
+async def kaneki(event):
+  await bot.send_message(event.chat, "hey there")]])
