@@ -6,6 +6,6 @@ from telegram import Update
 @register(pattern=("/about"))
 async def kaneki(update: Update):
           msg = update.effective_message
-          message = msg.reply_text("heyo there")
+          Message = msg.reply_text("heyo there")
 
-          message.edit_text("hey there")
+          Message.edit_text("hey there")
