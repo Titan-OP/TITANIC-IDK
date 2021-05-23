@@ -4,4 +4,7 @@ from YoneRobot.events import register
 
 @register(pattern=("/about"))
 async def kaneki(event):
-  await event.reply("hey there")
+          msg = update.effective_message
+          message = msg.reply_text("heyo there")
+
+          message.edit_text("hey there")
