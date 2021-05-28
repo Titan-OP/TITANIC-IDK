@@ -1,5 +1,5 @@
 from telethon import events
-from SaitamaRobot import telethn
+from YoneRobot import telethn
 
 from pymongo import MongoClient
 from YoneRobot import MONGO_DB_URI
