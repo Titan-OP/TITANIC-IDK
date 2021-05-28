@@ -5,12 +5,11 @@ from telegram import Update
 
 @register(pattern=("/about"))
 async def kaneki(event):
-          await event.reply("Im *nezuko*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_nezuko's licensed under the GNU General Public License v3.0_
-                 \nany questions about *nezuko* come to [support](t.me/nezukosupport1) .
-                 \n\nkeep updated about *nezuko* by joining [updates](t.me/nezukoupdates1) channel.")
+          await event.reply("Heyo, im *nezuko* from kimestu no yaiba.
+                             A powerful bot to help you manage your group.
+                             Hit /help to know my features.
+                             I can restrict users.
+                             I can warn users when they reach max warns I will ban or kick them.
+                             I can keep filters and notes and many more to know all of them hit /help
+                             Any questions regarding me head to [support group](t.me/nezukosupport1)
+                             Keep updated about nezuko by joining [updates](t.me/nezukoupdates1) channel")
