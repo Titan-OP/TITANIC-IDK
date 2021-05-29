@@ -77,7 +77,8 @@ async def kaneki(event):
                              \nI can warn users when they reach max warns I will ban or kick them.
                              \nI can keep filters and notes and many more to know all of them hit /help.
                              \nAny questions regarding me head to [support group](t.me/nezukosupport1)
-                             \nKeep updated about nezuko by joining [updates](t.me/nezukoupdates1) channel""")
-                      .     parse_mode=ParseMode.MARKDOWN,
+                             \nKeep updated about nezuko by joining [updates](t.me/nezukoupdates1) channel""",
+                            parse_mode=ParseMode.MARKDOWN,
                             disable_web_page_preview=True,
                             reply_markup=InlineKeyboardMarkup(buttons)
+                          )
