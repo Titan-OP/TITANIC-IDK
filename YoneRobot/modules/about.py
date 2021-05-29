@@ -69,7 +69,7 @@ def yone_about_callback(update, context):
 
 
 @register(pattern=("/about"))
-async def (event):
+async def _(event):
           await event.reply("""Heyo, im NEZUKO from kimestu no yaiba.
                              \nA powerful bot to help you manage your group.
                              \nHit /help to know my features.
