@@ -46,7 +46,7 @@ async def purge_messages(event):
     time_ = time.perf_counter() - start
     text = f"Purged Successfully"
     await event.respond(text, parse_mode="markdown")
-    msg = "Purged Successfully"
+    msg = (text) 
     await asyncio.sleep(30) # waiting 30 seconds
     await msg.delete()
 
