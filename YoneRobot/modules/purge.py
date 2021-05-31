@@ -1,4 +1,5 @@
 import time
+import asyncio
 from telethon import events
 
 from YoneRobot import telethn
@@ -45,8 +46,10 @@ async def purge_messages(event):
     time_ = time.perf_counter() - start
     text = f"Purged Successfully"
     await event.respond(text, parse_mode="markdown")
+    msg = "Purged Successfully"
+    await asyncio.sleep(30) # waiting 30 seconds
+    await msg.delete()
 
-a = "Purged Successfully"
         
 
 async def delete_messages(event):
