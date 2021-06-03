@@ -66,3 +66,4 @@ textblob
 nudepy
 
 motor
+python-arq
