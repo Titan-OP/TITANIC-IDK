@@ -79,5 +79,11 @@ async def _(event):
                              \nAny questions regarding me head to [support group](t.me/nezukosupport1)
                              \nKeep updated about nezuko by joining [updates](t.me/nezukoupdates1) channel""",
                             parse_mode=ParseMode.MARKDOWN,
-                            reply_markup=buttons
-                          )
+                            reply_markup=InlineKeyboardMarkup(
+                                 [
+                                  [
+                                     InlineKeyboardButton(text="Back", callback_data="terms_back")
+                                  ]
+                                 ]
+                              ),
+                           )
