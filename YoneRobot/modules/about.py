@@ -81,3 +81,4 @@ async def _(event):
                            reply_markup=InlineKeyboardMarkup(buttons),
                            parse_mode=ParseMode.MARKDOWN,
                            reply_markup=reply_markup
+         )
