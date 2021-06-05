@@ -87,7 +87,7 @@ buttons = [
             text="add NEZUKO to your group", url="t.me/nezuko13_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="yone_"),
+        InlineKeyboardButton(text="updates", url="https://t.me/nezukoupdates1"),
         InlineKeyboardButton(
             text="support", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
