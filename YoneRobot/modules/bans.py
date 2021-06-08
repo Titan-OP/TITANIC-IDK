@@ -110,8 +110,8 @@ def ban(update: Update, context: CallbackContext) -> str:
 
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code> </code><b>admin {mention_html(user.id, html.escape(user.first_name))} has successfully banned</b>\n"
-            f"<code> </code><b>User</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"admin {mention_html(user.id, html.escape(user.first_name))} has successfully banned\n"
+            f"User {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
             reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
