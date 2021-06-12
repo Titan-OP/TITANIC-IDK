@@ -74,26 +74,27 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Heyo there!
-I'm [NEZUKO](https://telegra.ph/file/5686a109def3c0cfd8229.jpg) , from kimetsu no yaiba
+нєуα тнєяє!
+I'м [TITAN 2.0](https://telegra.ph/file/b3848003d589bdbd971f3.jpg) , ƒяσм тє¢нησℓσgι¢αℓ ωσяℓ∂. 😜
 
-Im here to help your group management with ease. 
-Hit /help to see my demon arts
+ι αм αη ƒяιєη∂ℓу gяσυρ мαηαgємєηт вσт, αη∂ ι ωιℓℓ нєℓρ уσυ мαηαgιηg уσυя gяσυρ, נυѕт α∂∂ мє тнєяє
+
+✯ υѕє /help тσ ѕєє му ¢σммαη∂ѕ ✯
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="add NEZUKO to your group", url="t.me/nezuko13_bot?startgroup=true"),
+            text="💫 α∂∂ Tɪᴛᴀɴ Bᴏᴛ тσ уσυя gяσυρ 💫", url="t.me/Titan1v0_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="yone_"),
+        InlineKeyboardButton(text="『 ɪɴꜰᴏ 』", callback_data="yone_"),
         InlineKeyboardButton(
-            text="support", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="🔶 Sᴜᴘᴘᴏʀᴛ 🔶", url=f"https://t.me/TITANX_CHAT"
         ),
     ],
     [
-        InlineKeyboardButton(text="Demon Arts", callback_data="help_back"),
+        InlineKeyboardButton(text="🔷 Hᴇʟᴘ Mᴇɴᴜ 🔷", callback_data="help_back"),
     ],
 ]
 
