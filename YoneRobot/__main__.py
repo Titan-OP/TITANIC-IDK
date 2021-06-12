@@ -104,8 +104,8 @@ HELP_STRINGS = """
 》》 /start : ѕтαятѕ мє! уσυ'νє ρяσвαвℓу αℓяєα∂у υѕє∂ тнιѕ.
 》》 /help : ѕєη∂ѕ тнιѕ мєѕѕαgє; ι'ℓℓ тєℓℓ уσυ мσяє αвσυт муѕєℓƒ!
 """
-yone_IMG = "https://telegra.ph/file/9864f94348bdc07aebd64.jpg"
-HELP_IMG = "https://telegra.ph/file/9864f94348bdc07aebd64.jpg"
+yone_IMG = "https://telegra.ph/file/998bd861a06ecc42f6ffd.jpg"
+HELP_IMG = "https://telegra.ph/file/998bd861a06ecc42f6ffd.jpg"
 HELP_MSG = "cℓιcк тнє вυттση вєℓσω тσ gєт му нєℓρ мєηυ ιη PM|DM"
 
 DONATE_STRING = """ησ ηєє∂ σƒ ∂σηαтισηѕ,ѕυρρσят υѕ ву נσιηιηg @TITANX_CHAT"""
@@ -434,7 +434,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="《Back》", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="✧ вαcк ✧", callback_data="help_back")]]
             ),
         )
 
@@ -467,7 +467,7 @@ def send_settings(chat_id, user_id, user=False):
             chat_name = dispatcher.bot.getChat(chat_id).title
             dispatcher.bot.send_message(
                 user_id,
-                text="Which module would you like to check {}'s settings for?".format(
+                text="ωнιcн мσ∂υℓє ωσυℓ∂ уσυ ℓιкє тσ cнєcк {}'s ѕєттιηgѕ ƒσя?".format(
                     chat_name
                 ),
                 reply_markup=InlineKeyboardMarkup(
@@ -507,7 +507,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="✧ вαcк ✧",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -520,8 +520,8 @@ def settings_button(update: Update, context: CallbackContext):
             curr_page = int(prev_match.group(2))
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                "Hi there! There are quite a few settings for {} - go ahead and pick what "
-                "you're interested in.".format(chat.title),
+                "нι тнєяє! тнєяє αяє qυιтє α ƒєω ѕєттιηgѕ ƒσя {} - gσ αнєα∂ αη∂ ριcк ωнαт "
+                "уσυ'яє ιηтєяєѕтє∂ ιη.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
                         curr_page - 1, CHAT_SETTINGS, "stngs", chat=chat_id
@@ -534,8 +534,8 @@ def settings_button(update: Update, context: CallbackContext):
             next_page = int(next_match.group(2))
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                "Hi there! There are quite a few settings for {} - go ahead and pick what "
-                "you're interested in.".format(chat.title),
+                "нι тнєяє! тнєяє αяє qυιтє α ƒєω ѕєттιηgѕ ƒσя {} - gσ αнєα∂ αη∂ ριcк ωнαт "
+                "уσυ'яє ιηтєяєѕтє∂ ιη.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
                         next_page + 1, CHAT_SETTINGS, "stngs", chat=chat_id
@@ -547,8 +547,8 @@ def settings_button(update: Update, context: CallbackContext):
             chat_id = back_match.group(1)
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                text="Hi there! There are quite a few settings for {} - go ahead and pick what "
-                "you're interested in.".format(escape_markdown(chat.title)),
+                text=""нι тнєяє! тнєяє αяє qυιтє α ƒєω ѕєттιηgѕ ƒσя {} - gσ αнєα∂ αη∂ ριcк ωнαт "
+                "уσυ'яє ιηтєяєѕтє∂ ιη."".format(escape_markdown(chat.title)),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, CHAT_SETTINGS, "stngs", chat=chat_id)
@@ -576,14 +576,14 @@ def get_settings(update: Update, context: CallbackContext):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "Click here to get this chat's settings, as well as yours."
+            text = "cℓιcк нєяє тσ gєт тнιѕ cнαт'ѕ ѕєттιηgѕ, αѕ ωєℓℓ αѕ уσυяѕ."
             msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="⚙️ ѕєттιηgѕ ⚙️",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -593,7 +593,7 @@ def get_settings(update: Update, context: CallbackContext):
                 ),
             )
         else:
-            text = "Click here to check your settings."
+            text = "cℓιcк нєяє тσ cнєcк уσυя ѕєттιηgѕ."
 
     else:
         send_settings(chat.id, user.id, True)
@@ -609,10 +609,10 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1097093376 and DONATION_LINK:
             update.effective_message.reply_text(
-                "You can also donate to the person currently running me "
-                "[here]({})".format(DONATION_LINK),
+                "уσυ cαη αℓѕσ ∂σηαтє тσ тнє ρєяѕση cυяяєηтℓу яυηηιηg мє "
+                "[нєяє]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -626,11 +626,11 @@ def donate(update: Update, context: CallbackContext):
             )
 
             update.effective_message.reply_text(
-                "I've PM'ed you about donating to my creator!"
+                "ι'νє PM'є∂ уσυ αвσυт ∂σηαтιηg тσ му cяєαтσя!"
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "Contact me in PM first to get donation information."
+                "cσηтαcт мє ιη ρм ƒιяѕт тσ gєт ∂σηαтιση ιηƒσямαтιση."
             )
 
 
@@ -657,7 +657,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "OwO, I'm online")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "✨нσℓα! 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ιѕ нєяє✨")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
