@@ -75,11 +75,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 нєуα тнєяє!
-I'м [TITAN 2.0](https://telegra.ph/file/b3848003d589bdbd971f3.jpg) , ƒяσм тє¢нησℓσgι¢αℓ ωσяℓ∂. 😜
+I'м [TITAN 2.0](https://telegra.ph/file/b3848003d589bdbd971f3.jpg) , ƒяσм тєcнησℓσgιcαℓ ωσяℓ∂. 😜
 
 ι αм αη ƒяιєη∂ℓу gяσυρ мαηαgємєηт вσт, αη∂ ι ωιℓℓ нєℓρ уσυ мαηαgιηg уσυя gяσυρ, נυѕт α∂∂ мє тнєяє
 
-✯ υѕє /help тσ ѕєє му ¢σммαη∂ѕ ✯
+✯ υѕє /help тσ ѕєє му cσммαη∂ѕ ✯
 """
 
 buttons = [
@@ -100,15 +100,15 @@ buttons = [
 
 
 HELP_STRINGS = """
-Helpful Commands [:](https://telegra.ph/file/e3709eb1434170f628643.jpg)
-》 /start: Starts me! You've probably already used this.
-》 /help: Sends this message; I'll tell you more about myself!
+𝐇𝐞𝐥𝐩𝐟𝐮𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 σƒ [𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎](https://telegra.ph/file/ccbe76d7adf8cadd4f75f.jpg) : .
+》》 /start : ѕтαятѕ мє! уσυ'νє ρяσвαвℓу αℓяєα∂у υѕє∂ тнιѕ.
+》》 /help : ѕєη∂ѕ тнιѕ мєѕѕαgє; ι'ℓℓ тєℓℓ уσυ мσяє αвσυт муѕєℓƒ!
 """
-yone_IMG = "https://telegra.ph/file/5686a109def3c0cfd8229.jpg"
-HELP_IMG = "https://telegra.ph/file/053356a58a4da844d8e05.jpg"
-HELP_MSG = "Click the button below to get help manu in your pm"
+yone_IMG = "https://telegra.ph/file/9864f94348bdc07aebd64.jpg"
+HELP_IMG = "https://telegra.ph/file/9864f94348bdc07aebd64.jpg"
+HELP_MSG = "cℓιcк тнє вυттση вєℓσω тσ gєт му нєℓρ мєηυ ιη PM|DM"
 
-DONATE_STRING = """no need of donations,support us by joining @nezukosupport1"""
+DONATE_STRING = """ησ ηєє∂ σƒ ∂σηαтισηѕ,ѕυρρσят υѕ ву נσιηιηg @TITANX_CHAT"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -193,7 +193,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅️ вαcк ⬅️", callback_data="help_back")]]
                     ),
                 )
 
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "ι'м αωαкє αℓяєα∂у!\n<b>нανєη'т ѕℓєρт ѕιηcє:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -307,7 +307,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="вαcк", callback_data="help_back")]]
                 ),
             )
 
@@ -353,22 +353,22 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" I'm *nezuko*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_nezuko's licensed under the GNU General Public License v3.0_
-                 \nany questions about nezuko come to [support](t.me/nezukosupport1) .
-                 \n\nkeep updated about nezuko by joining [updates](t.me/nezukoupdates1) channel.""",
+            text=""" ɪ'ᴍ 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
+                 \n✪ ι cαη яєѕтяιcт υѕєяѕ.
+                 \n✪ ι cαη gяєєт υѕєяѕ ωιтн cυѕтσмιzαвℓє ωєℓ¢σмє мєѕѕαgєѕ αη∂ єνєη ѕєт α gяσυρ'ѕ яυℓєѕ.
+                 \n✪ ι нανє αη α∂ναη¢є∂ αηтι-ƒℓσσ∂ ѕуѕтєм.
+                 \n✪ ι cαη ωαяη υѕєяѕ υηтιℓ тнєу яєαcн мαχ ωαяηѕ, ωιтн єαcн ρяє∂єƒιηє∂ αcтισηѕ ѕυcн αѕ вαη, мυтє, кιcк, єтc.
+                 \n✪ ι нανє α ησтє кєєριηg ѕуѕтєм, вℓαcкℓιѕтѕ, αη∂ єνєη ρяє∂єтєямιηє∂ яєρℓιєѕ ση cєятαιη кєуωσя∂ѕ.
+                 \n✪ ι cнєcк ƒσя α∂мιηѕ' ρєямιѕѕισηѕ вєƒσяє єχє¢υтιηg αηу cσммαη∂ αη∂ мσяє ѕтυƒƒѕ
+                 \n\n_TITAN 2.0 ιѕ ℓιcєηѕє∂ υη∂єя тнє 𝐆𝐍𝐔 ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ v3.0_
+                 \nαηу qυєѕтισηѕ αвσυт 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 cσмє тσ [ѕυρρσят](t.me/TITANX_CHAT) .
+                 \n\nвє υρ∂αтє∂ αвσυт 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ву נσιηιηg [υρ∂αтєѕ](t.me/TITAN_UPDATES) ¢нαηηєℓ.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yone_back")
+                    InlineKeyboardButton(text="вαcк", callback_data="yone_back")
                  ]
                 ]
             ),
@@ -392,12 +392,12 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"cσηтα¢т мє ιη ρм тσ gєт нєℓρ σƒ {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="💠 нєℓρ 💠",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -413,7 +413,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="💠 нєℓρ 💠",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
