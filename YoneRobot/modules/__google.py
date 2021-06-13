@@ -135,7 +135,7 @@ async def okgoogle(img):
         imgspage = match["similar_images"]
 
         if guess and imgspage:
-            await dev.edit(f"[{guess}]({fetchUrl})\n\n`ℓσσкιηg ƒσя тнιѕ ιмαgє...)
+            await dev.edit(f"[{guess}]({fetchUrl})\n`ℓσσкιηg ƒσя тнιѕ ιмαgє...`)
         else:
             await dev.edit("`cαη'т ƒιη∂ αвσυт тнιѕ ιмαgє.`")
             return
