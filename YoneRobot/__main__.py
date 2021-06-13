@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 нєуα тнєяє!
-I'м [TITAN 2.0](https://telegra.ph/file/b3848003d589bdbd971f3.jpg) , ƒяσм тєcнησℓσgιcαℓ ωσяℓ∂. 😜
+I'м [TITAN 2.0](https://telegra.ph/file/9d59bd2ea06a607bcf2df.jpg) , ƒяσм тєcнησℓσgιcαℓ ωσяℓ∂. 😜
 
 ι αм αη ƒяιєη∂ℓу gяσυρ мαηαgємєηт вσт, αη∂ ι ωιℓℓ нєℓρ уσυ мαηαgιηg уσυя gяσυρ, נυѕт α∂∂ мє тнєяє
 
@@ -103,7 +103,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-𝐇𝐞𝐥𝐩𝐟𝐮𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 σƒ [𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎](https://telegra.ph/file/ccbe76d7adf8cadd4f75f.jpg) : .
+𝐇𝐞𝐥𝐩𝐟𝐮𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 σƒ [𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎](https://telegra.ph/file/9d59bd2ea06a607bcf2df.jpg) : .
 》》 /start : ѕтαятѕ мє! уσυ'νє ρяσвαвℓу αℓяєα∂у υѕє∂ тнιѕ.
 》》 /help : ѕєη∂ѕ тнιѕ мєѕѕαgє; ι'ℓℓ тєℓℓ уσυ мσяє αвσυт муѕєℓƒ!
 """
