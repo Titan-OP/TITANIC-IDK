@@ -224,15 +224,14 @@ def start(update: Update, context: CallbackContext):
             "ι'м αωαкє αℓяєα∂у!\n<b>нανєη'т ѕℓєρт ѕιηcє:</b> <code>{}</code>".format(
                 uptime
             ),
-            parse_mode=ParseMode.HTML,
-        )
    buttons = [
       [
         InlineKeyboardButton(
-        text="👑 Cʀᴇᴀᴛᴏʀ 👑", url="t.me/DARK_DEVIL_OP"
-        ),
-    ]
+        text="👑 Cʀᴇᴀᴛᴏʀ 👑", url="t.me/DARK_DEVIL_OP"),
+      ]
   ]
+             parse_mode=ParseMode.HTML,
+        )
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
