@@ -189,11 +189,16 @@ __help__ = """
 ✮ α∂∂ мє ιη уσυя cнαηηєℓ αѕ α∂мιη
  
 ♦️ *cσмммαη∂ѕ* ♦️
- ❍ /fsub {channel username} - тσ тυяη ση αη∂ ѕєтυρ тнє cнαηηєℓ.
-  `💡Hint: Do this first...`
- ❍ /fsub - тσ gєт тнє cυяяєηт ѕєттιηgѕ.
- ❍ /fsub disable - тσ тυяη σƒƒ ƒσяcє-ѕυвѕcяιвє...
-  `💡Hint: If you disable fsub, you need to set again for working.. /fsub {channel username}`
- ❍ /fsub clear - тσ υηмυтє αℓℓ мємвєяѕ ωнσ мυтє∂ ву мє.
+ ✮ /fsub {channel username} - тσ тυяη ση αη∂ ѕєтυρ тнє cнαηηєℓ.
+    
+     `💡Hint: Do this first...`
+
+ ✮ /fsub - тσ gєт тнє cυяяєηт ѕєттιηgѕ.
+
+ ✮ /fsub disable - тσ тυяη σƒƒ ƒσяcє-ѕυвѕcяιвє...
+  
+     `💡Hint: If you disable fsub, you need to set again for working.. /fsub {channel username}`
+
+ ✮ /fsub clear - тσ υηмυтє αℓℓ мємвєяѕ ωнσ мυтє∂ ву мє.
 """
-__mod_name__ = "Force-Subscribe📢"
+__mod_name__ = "Force-Sub📢"
