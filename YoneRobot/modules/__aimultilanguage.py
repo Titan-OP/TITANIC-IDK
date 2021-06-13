@@ -42,7 +42,7 @@ async def fetch(url):
 yone_chats = []
 en_chats = []
 
-@Nezuko.on_message(
+@TITAN.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -59,20 +59,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("nezuko AI Already Activated In This Chat")
+            await lel.edit("TITAN 2.0 AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"nezuko AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"TITAN 2.0 AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("nezuko AI Was Not Activated In This Chat")
+            await lel.edit("TITAN 2.0 AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"nezuko AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"TITAN 2.0 AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -88,7 +88,7 @@ async def hmm(_, message):
         )
 
 
-@Nezuko.on_message(
+@TITAN.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -114,9 +114,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("nezuko", "Aco")
-        test = test.replace("nezuko", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@nezuko13_bot&ownername=@kaneki_ded2"
+        test = test.replace("TITAN", "Aco")
+        test = test.replace("TITAN", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
 
         try:
             r = requests.request("GET", url=URL)
@@ -177,9 +177,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("nezuko", "Aco")
-        test = test.replace("nezuko", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@nezuko13_bot&ownername=@kaneki_ded2"
+        test = test.replace("TITAN", "Aco")
+        test = test.replace("TITAN", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -196,13 +196,13 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await Nezuko.send_chat_action(message.chat.id, "typing")
+            await TITAN.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
 
 
-@Nezuko.on_message(
+@TITAN.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -251,9 +251,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("nezuko", "Aco")
-    test = test.replace("nezuko", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@nezuko13_bot&ownername=@kaneki_ded2"
+    test = test.replace("TITAN", "Aco")
+    test = test.replace("TITAN", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -268,14 +268,14 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Nezuko.send_chat_action(message.chat.id, "typing")
+        await TITAN.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
-@Nezuko.on_message(
-    filters.regex("nezuko|nezuko|Nezuko|Nezuko|Nezuko")
+@TITAN.on_message(
+    filters.regex("titan|titan|TITAN|TITAN|TITAN")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -348,18 +348,18 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await Nezuko.send_chat_action(message.chat.id, "typing")
+        await TITAN.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
 __help__ = """
-<b> Chatbot </b>
-Nezuko AI 3.0 CAN AI CAN DETECT & REPLY UPTO 200 LANGUAGES
+<b>Chatbot</b>
+TITAN AI 3.0 CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
 """
 
-__mod_name__ = "Chatbot"
+__mod_name__ = "🤖Chatbot"
