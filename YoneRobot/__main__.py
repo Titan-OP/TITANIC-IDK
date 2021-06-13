@@ -85,7 +85,7 @@ I'м [TITAN 2.0](https://telegra.ph/file/b3848003d589bdbd971f3.jpg) , ƒяσм �
 buttons = [
     [
         InlineKeyboardButton(
-            text="💫 α∂∂ Tɪᴛᴀɴ Bᴏᴛ тσ уσυя gяσυρ 💫", url="t.me/Titan1v0_bot?startgroup=true"),
+            text="💫 Aᴅᴅ 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", url="t.me/Titan1v0_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="『 ɪɴꜰᴏ 』", callback_data="yone_"),
@@ -95,6 +95,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="🔷 Hᴇʟᴘ Mᴇɴᴜ 🔷", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text="👑 Cʀᴇᴀᴛᴏʀ 👑", url=f"https://t.me/DARK_DEVIL_OP"),
     ],
 ]
 
