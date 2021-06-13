@@ -183,17 +183,17 @@ __help__ = """
 *ƒσяcє ѕυвѕcяιвє:*
 ✮ 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 cαη мυтє мємвєяѕ ωнσ αяє ησт ѕυвѕcяιвє∂ уσυя cнαηηєℓ υηтιℓ тнєу ѕυвѕcяιвє.
 ✮ ωнєη єηαвℓє∂ ι ωιℓℓ мυтє υηѕυвѕcяιвє∂ мємвєяѕ αη∂ ѕнσω тнєм α υηмυтє вυттση. ωнєη тнєу ωιℓℓ ѕυвѕcяιвє αη∂ ρяєѕѕ тнє вυттση ι ωιℓℓ υηмυтє тнєм.
-*ѕєтυρ*
-*σηℓу gяσυρ cяєαтσя cαη υѕє тнє ƒσяcє ѕυвѕcяιвє cσммαη∂ѕ*
-✮ Add me in your group as admin
-✮ Add me in your channel as admin 
+🔹 *ѕєтυρ* 🔹
+📍 *σηℓу gяσυρ cяєαтσя cαη υѕє тнє ƒσяcє ѕυвѕcяιвє cσммαη∂ѕ*
+✮ α∂∂ мє ιη уσυя gяσυρ αѕ α∂мιη
+✮ α∂∂ мє ιη уσυя cнαηηєℓ αѕ α∂мιη
  
-*Commmands*
- ❍ /fsub {channel username} - To turn on and setup the channel.
-  💡Do this first...
- ❍ /fsub - To get the current settings.
- ❍ /fsub disable - To turn of ForceSubscribe..
-  💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
- ❍ /fsub clear - To unmute all members who muted by me.
+♦️ *cσмммαη∂ѕ* ♦️
+ ❍ /fsub {channel username} - тσ тυяη ση αη∂ ѕєтυρ тнє cнαηηєℓ.
+  `💡Hint: Do this first...`
+ ❍ /fsub - тσ gєт тнє cυяяєηт ѕєттιηgѕ.
+ ❍ /fsub disable - тσ тυяη σƒƒ ƒσяcє-ѕυвѕcяιвє...
+  `💡Hint: If you disable fsub, you need to set again for working.. /fsub {channel username}`
+ ❍ /fsub clear - тσ υηмυтє αℓℓ мємвєяѕ ωнσ мυтє∂ ву мє.
 """
-__mod_name__ = "F-Sub"
+__mod_name__ = "Force-Subscribe📢"
