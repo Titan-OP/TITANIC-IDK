@@ -94,10 +94,10 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🔷 Hᴇʟᴘ Mᴇɴᴜ 🔷", callback_data="help_back"),
+        InlineKeyboardButton(text="👑 Cʀᴇᴀᴛᴏʀ 👑", url=f"https://t.me/DARK_DEVIL_OP"),
     ],
     [
-        InlineKeyboardButton(text="👑 Cʀᴇᴀᴛᴏʀ 👑", url=f"https://t.me/DARK_DEVIL_OP"),
+        InlineKeyboardButton(text="🔷 Hᴇʟᴘ Mᴇɴᴜ 🔷", callback_data="help_back"),
     ],
 ]
 
@@ -224,12 +224,9 @@ def start(update: Update, context: CallbackContext):
             "ι'м αωαкє αℓяєα∂у!\n<b>нανєη'т ѕℓєρт ѕιηcє:</b> <code>{}</code>".format(
                 uptime
             ),
-   buttons = [
-      [
-        InlineKeyboardButton(
-        text="👑 Cʀᴇᴀᴛᴏʀ 👑", url="t.me/DARK_DEVIL_OP"),
-      ]
-  ]
+            parse_mode=ParseMode.HTML,
+        )
+
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
