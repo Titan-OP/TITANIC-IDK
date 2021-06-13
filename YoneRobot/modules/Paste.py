@@ -33,7 +33,7 @@ def paste(update: Update, context: CallbackContext):
            buttons = [
                [
                    InlineKeyboardButton(
-                   text="🔶 Sᴜᴘᴘᴏʀᴛ 🔶", url="t.me/TITANX_CHAT"
+                   text="🔶 Sᴜᴘᴘᴏʀᴛ 🔶", url= {url}"
                    ),
                ]
     ]
