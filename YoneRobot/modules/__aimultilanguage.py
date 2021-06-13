@@ -50,41 +50,41 @@ async def hmm(_, message):
     global yone_chats
     if len(message.command) != 2:
         await message.reply_text(
-            "I only recognize `/chatbot on` and /chatbot `off only`"
+            "ι σηℓу яєcσgηιzє `/chatbot on` αη∂ `/chatbot off` σηℓу"
         )
         message.continue_propagation()
     status = message.text.split(None, 1)[1]
     chat_id = message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "`ρяσcєѕѕιηg...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("TITAN 2.0 AI Already Activated In This Chat")
+            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ αℓяєα∂у αcтιναтє∂ ιη тнιѕ cнαт")
             return
         await lel.edit(
-            f"TITAN 2.0 AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ѕυccєѕѕƒυℓℓу α∂∂є∂ ƒσя υѕєяѕ ιη тнє cнαт {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("TITAN 2.0 AI Was Not Activated In This Chat")
+            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ωαѕ ησт αcтιναтє∂ ιη тнιѕ cнαт")
             return
         await lel.edit(
-            f"TITAN 2.0 AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ѕυccєѕѕƒυℓℓу ∂єαcтιναтє∂ ƒσя υѕєяѕ ιη тнє cнαт {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
             en_chats.append(chat_id)
-            await message.reply_text("English AI chat Enabled!")
+            await message.reply_text("єηgℓιѕн ᴀɪ cнαт єηαвℓє∂!")
             return
-        await message.reply_text("AI Chat Is Already Disabled.")
+        await message.reply_text("ᴀɪ cнαт ιѕ αℓяєα∂у ∂ιѕαвℓє∂.")
         message.continue_propagation()
     else:
         await message.reply_text(
-            "I only recognize `/chatbot on` and /chatbot `off only`"
+            "ι σηℓу яєcσgηιzє `/chatbot on` αη∂ `/chatbot off` σηℓу"
         )
 
 
@@ -356,10 +356,10 @@ async def inuka(client, message):
 
 __help__ = """
 <b>Chatbot</b>
-TITAN 2.0 AI 3.0 CAN DETECT & REPLY UPTO 200 LANGUAGES
- - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
- - /chatbot EN : Enables English only chatbot
+𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 αι 3.0 cαη ∂єтє¢т & яєρℓу υρтσ 200 ℓαηgυαgєѕ
+ - /chatbot [ON|OFF]: єηαвℓєѕ|∂ιѕαвℓєѕ ᴀɪ cнαт мσ∂є (EXCLUSIVE)
+ - /chatbot EN : єηαвℓєѕ єηgℓιѕн σηℓу cнαтвσт
  
 """
 
-__mod_name__ = "🤖Chatbot"
+__mod_name__ = "AI Chatbot🤖"
