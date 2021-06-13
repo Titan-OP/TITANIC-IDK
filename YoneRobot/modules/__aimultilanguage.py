@@ -329,9 +329,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("nezuko", "Aco")
-    test = test.replace("nezuko", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@nezuko13_bot&ownername=@kaneki_ded2"
+    test = test.replace("TITAN", "Aco")
+    test = test.replace("TITAN", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
     try:
         r = requests.request("GET", url=URL)
     except:
