@@ -230,8 +230,6 @@ def start(update: Update, context: CallbackContext):
         text="👑 Cʀᴇᴀᴛᴏʀ 👑", url="t.me/DARK_DEVIL_OP"),
       ]
   ]
-             parse_mode=ParseMode.HTML,
-        )
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
