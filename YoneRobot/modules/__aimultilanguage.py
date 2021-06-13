@@ -114,9 +114,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("TITAN", "Aco")
-        test = test.replace("TITAN", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
+        test = test.replace("nezuko", "Aco")
+        test = test.replace("nezuko", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
 
         try:
             r = requests.request("GET", url=URL)
@@ -177,8 +177,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("TITAN", "Aco")
-        test = test.replace("TITAN", "Aco")
+        test = test.replace("nezuko", "Aco")
+        test = test.replace("nezuko", "Aco")
         URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
         try:
             r = requests.request("GET", url=URL)
@@ -196,7 +196,7 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await TITAN.send_chat_action(message.chat.id, "typing")
+            await Nezuko.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -251,8 +251,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("TITAN", "Aco")
-    test = test.replace("TITAN", "Aco")
+    test = test.replace("nezuko", "Aco")
+    test = test.replace("nezuko", "Aco")
     URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
     try:
         r = requests.request("GET", url=URL)
@@ -268,14 +268,14 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await TITAN.send_chat_action(message.chat.id, "typing")
+        await Nezuko.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
 @Nezuko.on_message(
-    filters.regex("titan|titan|TITAN|TITAN|TITAN")
+    filters.regex("nezuko|nezuko|Nezuko|Nezuko|Nezuko")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -329,8 +329,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("TITAN", "Aco")
-    test = test.replace("TITAN", "Aco")
+    test = test.replace("nezuko", "Aco")
+    test = test.replace("nezuko", "Aco")
     URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@titan1v0_bot&ownername=@DARK_DEVIL_OP"
     try:
         r = requests.request("GET", url=URL)
@@ -348,7 +348,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await TITAN.send_chat_action(message.chat.id, "typing")
+        await Nezuko.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
@@ -356,7 +356,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b>Chatbot</b>
-TITAN AI 3.0 CAN DETECT & REPLY UPTO 200 LANGUAGES
+TITAN 2.0 AI 3.0 CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
