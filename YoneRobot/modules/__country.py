@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By TITAN 2.0.</b>
+<b>Gathered By TITAN 2.0.</b>
 """
     
     
