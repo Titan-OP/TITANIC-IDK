@@ -23,8 +23,8 @@ def paste(update: Update, context: CallbackContext):
     key = (
         requests.post("https://nekobin.com/api/documents", json={"content": data})
         .json()
-        .get("result")
-        .get("key")
+        .print("result")
+        .print("key")
     )
 
     url = f"https://nekobin.com/{key}"
