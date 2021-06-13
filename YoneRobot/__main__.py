@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 нєуα тнєяє!
-I'м [TITAN 2.0](https://telegra.ph/file/9d59bd2ea06a607bcf2df.jpg) , ƒяσм тєcнησℓσgιcαℓ ωσяℓ∂. 😜
+I'м [𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎](https://telegra.ph/file/9d59bd2ea06a607bcf2df.jpg) , ƒяσм тєcнησℓσgιcαℓ ωσяℓ∂. 😜
 
 ι αм αη ƒяιєη∂ℓу gяσυρ мαηαgємєηт вσт, αη∂ ι ωιℓℓ нєℓρ уσυ мαηαgιηg уσυя gяσυρ, נυѕт α∂∂ мє тнєяє
 
