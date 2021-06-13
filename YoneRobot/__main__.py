@@ -371,7 +371,7 @@ def yone_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="вαcк", callback_data="yone_back")
+                    InlineKeyboardButton(text="✭ вαcк ✭", callback_data="yone_back")
                  ]
                 ]
             ),
@@ -437,8 +437,8 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="✧ вαcк ✧", callback_data="help_back")]]
-            ),
+                [[InlineKeyboardButton(text="✭ вαcк ✭", callback_data="help_back")]]
+            )
         )
 
     else:
@@ -480,8 +480,8 @@ def send_settings(chat_id, user_id, user=False):
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Seems like there aren't any chat settings available :'(\nSend this "
-                "in a group chat you're admin in to find its current settings!",
+                "ѕєємѕ ℓιкє тнєяє αяєη'т αηу cнαт ѕєттιηgѕ αναιℓαвℓє :'(\ѕєη∂ тнιѕ "
+                 "ιη α gяσυρ cнαт уσυ'яє α∂мιη ιη тσ ƒιη∂ ιтѕ cυяяєηт ѕєттιηgѕ!",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
