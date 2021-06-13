@@ -35,7 +35,7 @@ async def _(event):
     if event.fwd_from:
         return
     
-    webevent = await event.reply("searching........")
+    webevent = await event.reply("ѕєαяcнιηg........")
     match = event.pattern_match.group(1)
     page = re.findall(r"page=\d+", match)
     try:
@@ -53,7 +53,7 @@ async def _(event):
             title = gresults["titles"][i]
             link = gresults["links"][i]
             desc = gresults["descriptions"][i]
-            msg += f"❍[{title}]({link})\n**{desc}**\n\n"
+            msg += f"✧[{title}]({link})\n**{desc}**\n\n"
         except IndexError:
             break
     await webevent.edit(
@@ -101,15 +101,15 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await tbot.download_media(message, photo)
     else:
-        await img.reply("`Reply to photo or sticker nigger.`")
+        await img.reply("`яєρℓу тσ ρнσтσ σя ѕтιcкєя ∂υ∂є.`")
         return
 
     if photo:
-        dev = await img.reply("`Processing...`")
+        dev = await img.reply("`ρяσcєѕѕιηg...`")
         try:
             image = Image.open(photo)
         except OSError:
-            await dev.edit("`Unsupported sexuality, most likely.`")
+            await dev.edit("`υηѕυρρσятє∂ ѕєχυαℓιту, мσѕт ℓιкєℓу.`")
             return
         name = "okgoogle.png"
         image.save(name, "PNG")
@@ -126,7 +126,7 @@ async def okgoogle(img):
                 "\n`Parsing source now. Maybe.`"
             )
         else:
-            await dev.edit("`Google told me to fuck off.`")
+            await dev.edit("`gσσgℓє тσℓ∂ мє тσ ƒυcк σƒƒ.`")
             return
 
         os.remove(name)
@@ -135,9 +135,9 @@ async def okgoogle(img):
         imgspage = match["similar_images"]
 
         if guess and imgspage:
-            await dev.edit(f"[{guess}]({fetchUrl})\n\n`Looking for this Image...`")
+            await dev.edit(f"[{guess}]({fetchUrl})\n\n`ℓσσкιηg ƒσя тнιѕ ιмαgє...)
         else:
-            await dev.edit("`Can't find this piece of shit.`")
+            await dev.edit("`cαη'т ƒιη∂ αвσυт тнιѕ ιмαgє.`")
             return
 
         if img.pattern_match.group(1):
@@ -158,7 +158,7 @@ async def okgoogle(img):
         except TypeError:
             pass
         await dev.edit(
-            f"[{guess}]({fetchUrl})\n\n[Visually similar images]({imgspage})"
+            f"[{guess}]({fetchUrl})\n\n[νιѕυαℓℓу ѕιмιℓαя ιмαgєѕ]({imgspage})"
         )
 
 
@@ -267,7 +267,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Nezuko <==="
+        app_details += "\n\n===> 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -275,17 +275,25 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "◎Search"
+__mod_name__ = "Search🔎"
 
 __help__ = """
- ❍ /google <text>*:* Perform a google search
- ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
- ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
- ❍ /reverse: Does a reverse image search of the media which it was replied to.
- ❍ /gps <location>*:* Get gps location.
- ❍ /github <username>*:* Get information about a GitHub user.
- ❍ /country <country name>*:* Gathering info about given country
- ❍ /imdb <Movie name>*:* Get full info about a movie with imdb.com
- ❍ Nezuko <query>*:* Yone answers the query
-  💡Ex: `Nezuko where is India?`
+ ✮ /google <text>*:* ρєяƒσям α gσσgℓє ѕєαяcн
+ 
+ ✮ /img <text>*:* ѕєαяcн gσσgℓє ƒσя ιмαgєѕ αη∂ яєтυяηѕ тнєм\nƒσя gяєαтєя ησ. σƒ яєѕυℓтѕ ѕρєcιƒу `lim` , For eg: `/img hello lim=10`
+ 
+ ✮ /app <appname>*:* ѕєαяcнєѕ ƒσя αη αρρ ιη ρℓαу ѕтσяє αη∂ яєтυяηѕ ιтѕ ∂єтαιℓѕ.
+ 
+ ✮ /reverse: ∂σєѕ α яєνєяѕє ιмαgє ѕєαяcн σƒ тнє мє∂ια ωнι¢н ιт ωαѕ яєρℓιє∂ тσ.
+ 
+ ✮ /gps <location>*:* gєт gρѕ ℓσcαтιση.
+ 
+ ✮ /github <username>*:* gєт ιηƒσямαтιση αвσυт α gιтнυв υѕєя.
+ 
+ ✮ /country <country name>*:* gαтнєяιηg ιηƒσ αвσυт gινєη cσυηтяу.
+ 
+ ✮ /imdb <Movie name>*:* gєт ƒυℓℓ ιηƒσ αвσυт α мσνιє ωιтн `imdb.com`
+ 
+ ✮ 𝐓𝐈𝐓𝐀𝐍 <query>*:* 𝐓𝐈𝐓𝐀𝐍 αηѕωєяѕ тнє qυєяу
+     💡Example: `TITAN where is India?`
 """
