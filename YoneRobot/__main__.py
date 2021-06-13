@@ -226,7 +226,13 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
         )
-
+   buttons = [
+      [
+        InlineKeyboardButton(
+        text="👑 Cʀᴇᴀᴛᴏʀ 👑", url="t.me/DARK_DEVIL_OP"
+        ),
+    ]
+  ]
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
