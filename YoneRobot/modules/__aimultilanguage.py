@@ -50,41 +50,41 @@ async def hmm(_, message):
     global yone_chats
     if len(message.command) != 2:
         await message.reply_text(
-            "ɪ ᴏɴʟʏ ʀᴇᴄᴏɢɴɪᴢᴇ `/chatbot on` ᴀɴᴅ `/chatbot off` ᴏɴʟʏ"
+            "ι σηℓу яєcσgηιzє `/chatbot on` αη∂ `/chatbot off` σηℓу"
         )
         message.continue_propagation()
     status = message.text.split(None, 1)[1]
     chat_id = message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await edit_or_reply(message, "`ᴘʀᴏᴄᴇꜱꜱɪɴɢ...`")
+        lel = await edit_or_reply(message, "`ρяσcєѕѕιηg...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ")
+            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ αℓяєα∂у αcтιναтє∂ ιη тнιѕ cнαт")
             return
         await lel.edit(
-            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴀᴅᴅᴇᴅ ꜰᴏʀ ᴜꜱᴇʀ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ  {message.chat.id}"
+            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ѕυccєѕѕƒυℓℓу α∂∂є∂ ƒσя υѕєяѕ ιη тнє cнαт  {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "`ρяσcєѕѕιηg...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ᴡᴀꜱ ɴᴏᴛ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ")
+            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ωαѕ ησт αcтιναтє∂ ιη тнιѕ cнαт")
             return
         await lel.edit(
-            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅɪꜱᴀʙʟᴇᴅ ꜰᴏʀ ᴜꜱᴇʀ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ {message.chat.id}"
+            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ѕυccєѕѕƒυℓℓу ∂єαcтιναтє∂ ƒσя υѕєяѕ ιη тнє cнαт {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
             en_chats.append(chat_id)
-            await message.reply_text("Eɴɢʟɪꜱʜ ᴀɪ Cʜᴀᴛ Eɴᴀʙʟᴇᴅ!")
+            await message.reply_text("Eηgℓιѕн ᴀɪ cнαт єηαвℓє∂!")
             return
-        await message.reply_text("ᴀɪ ᴄʜᴀᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴅɪꜱᴀʙʟᴇᴅ.")
+        await message.reply_text("ᴀɪ cнαт ιѕ αℓяєα∂у ∂ιѕαвℓє∂.")
         message.continue_propagation()
     else:
         await message.reply_text(
-            "ɪ ᴏɴʟʏ ʀᴇᴄᴏɢɴɪᴢᴇ `/chatbot on` ᴀɴᴅ `/chatbot off` ᴏɴʟʏ"
+            "ι σηℓу яєcσgηιzє `/chatbot on` αη∂ `/chatbot off` σηℓу"
         )
 
 
