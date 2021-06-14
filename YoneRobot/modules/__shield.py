@@ -105,7 +105,7 @@ async def nsfw_watch(event):
                 return
             add_nsfwatch(str(event.chat_id))
             await event.reply(
-                f"**Added Chat {event.chat.title} With Id {event.chat_id} To Database. This Groups Nsfw Contents Will Be Deleted**"
+                f"**α∂∂є∂ ¢нαт {event.chat.title} ωιтн ɪᴅ  {event.chat_id} тσ ∂αтαвαѕє. тнιѕ gяσυρѕ ɴꜱꜰᴡ cσηтєηтѕ ωιℓℓ вє ∂єℓєтє∂**"
             )
         elif (
             input_str == "off"
@@ -114,18 +114,18 @@ async def nsfw_watch(event):
             or input_str == "disable"
         ):
             if not is_nsfwatch_indb(str(event.chat_id)):
-                await event.reply("This Chat Has Not Enabled Nsfw Watch.")
+                await event.reply("тнιѕ cнαт нαѕ ησт єηαвℓє∂ ɴꜱꜰᴡ Watch.")
                 return
             rmnsfwatch(str(event.chat_id))
             await event.reply(
-                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Nsfw Watch**"
+                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Nsfw ωαтcн**"
             )
         else:
             await event.reply(
-                "I undestand `/nsfwguardian on` and `/nsfwguardian off` only"
+                "ι υη∂єѕтαη∂ `/nsfwguardian on` αη∂ `/nsfwguardian off` σηℓу"
             )
     else:
-        await event.reply("`You Should Be Admin To Do This!`")
+        await event.reply("`уσυ ѕнσυℓ∂ вє α∂мιη тσ ∂σ тнιѕ!`")
         return
 
 
@@ -148,7 +148,7 @@ async def ws(event):
         await event.delete()
         st = sender.first_name
         hh = sender.id
-        final = f"**NSFW DETECTED**\n\n{st}](tg://user?id={hh}) your message contain NSFW content.. So, Yone deleted the message\n\n **Nsfw Sender - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️Automatic Detections Powered By YoneAI` \n**#GROUP_GUARDIAN** "
+        final = f"**Nꜱꜰᴡ Dᴇᴛᴇᴄᴛᴇᴅ**\n\n{st}](tg://user?id={hh}) уσυя мєѕѕαgє cσηтαιη ɴꜱꜰᴡ cσηтєηт.. ѕσ, 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ∂єℓєтє∂ тнє мєѕѕαgє\n\n **ɴꜱꜰᴡ ꜱᴇɴᴅᴇʀ - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴅᴇᴛᴇᴄᴛɪᴏɴꜱ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐓𝐈𝐓𝐀𝐍 𝐀𝐈` \n**#GROUP_GUARDIAN** "
         dev = await event.respond(final)
         await asyncio.sleep(10)
         await dev.delete()
@@ -429,15 +429,15 @@ async def del_profanity(event):
 #
 
 __help__ = """
-<b> Group Guardian: </b>
-Nezuko can protect your group from NSFW senders, Slag word users and also can force members to use English
+**Group Guardian:**
+𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 cαη ρяσтєcт уσυя gяσυρ ƒяσм ɴꜱꜰᴡ ѕєη∂єяѕ, ѕℓαg ωσя∂ υѕєяѕ αη∂ αℓѕσ cαη ƒσя¢є мємвєяѕ тσ υѕє єηgℓιѕн
 
-<b>Commmands</b>
- - /gshield <i>on/off</i> - Enable|Disable Porn cleaning
- - /globalmode <i>on/off</i> - Enable|Disable English only mode
- - /profanity <i>on/off</i> - Enable|Disable slag word cleaning
+**Commmands**
+ - /gshield __on|off__ - єηαвℓє|∂ιѕαвℓє ρσяη cℓєαηιηg
+ - /globalmode __on|off__ - єηαвℓє|∂ιѕαвℓє єηgℓιѕн σηℓу мσ∂є
+ - /profanity __on|off__ - єηαвℓє|∂ιѕαвℓє ѕℓαηg ωσя∂ cℓєαηιηg
  
-Note: Special credits goes to Julia project and Friday Userbot
+`Note: ꜱᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛꜱ ɢᴏᴇꜱ ᴛᴏ ᴊᴜʟɪᴀ ᴘʀᴏᴊᴇᴄᴛ ᴀɴᴅ ꜰʀɪᴅᴀʏ ᴜꜱᴇʀʙᴏᴛ`
  
 """
-__mod_name__ = "Shield"
+__mod_name__ = "Sʜɪᴇʟᴅ🛡️"
