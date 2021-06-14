@@ -1,13 +1,13 @@
 __mod_name__ = "Mᴜꜱɪᴄ🎶"
 
 __help__ = """
-- /video <i>query</i>: ∂σωηℓσα∂ νι∂єσ ƒяσм уσυтυвє
+- /video query : ∂σωηℓσα∂ νι∂єσ ƒяσм уσυтυвє
 
-- /deezer <i>query</i>: ∂σωηℓσα∂ ƒяσм ∂єєzєя
+- /deezer query : ∂σωηℓσα∂ ƒяσм ∂єєzєя
 
-- /music <i>query</i>: ∂σωηℓσα∂ ѕσηg ƒяσм ʏᴛ ѕєяνєяѕ. `(API BASED)`
+- /music query : ∂σωηℓσα∂ ѕσηg ƒяσм ʏᴛ ѕєяνєяѕ. `(API BASED)`
 
-- /lyrics <i>song name</i> : тнιѕ ρℓυgιη ѕєαяcнєѕ ƒσя ѕσηg ℓуяιcѕ ωιтн ѕσηg ηαмє.
+- /lyrics song name : тнιѕ ρℓυgιη ѕєαяcнєѕ ƒσя ѕσηg ℓуяιcѕ ωιтн ѕσηg ηαмє.
 
-- /glyrics <i> song name </i> : тнιѕ ρℓυgιη ѕєαяcнєѕ ƒσя ѕσηg ℓуяιcѕ ωιтн ѕσηg ηαмє αη∂ αятιѕт.
+- /glyrics song name : тнιѕ ρℓυgιη ѕєαяcнєѕ ƒσя ѕσηg ℓуяιcѕ ωιтн ѕσηg ηαмє αη∂ αятιѕт.
 """
