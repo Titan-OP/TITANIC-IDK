@@ -50,41 +50,41 @@ async def hmm(_, message):
     global yone_chats
     if len(message.command) != 2:
         await message.reply_text(
-            "ι σηℓу яєcσgηιzє `/chatbot on` αη∂ `/chatbot off` σηℓу"
+            "ɪ ᴏɴʟʏ ʀᴇᴄᴏɢɴɪᴢᴇ `/chatbot on` ᴀɴᴅ `/chatbot off` ᴏɴʟʏ"
         )
         message.continue_propagation()
     status = message.text.split(None, 1)[1]
     chat_id = message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await edit_or_reply(message, "`ρяσcєѕѕιηg...`")
+        lel = await edit_or_reply(message, "`ᴘʀᴏᴄᴇꜱꜱɪɴɢ...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ αℓяєα∂у αcтιναтє∂ ιη тнιѕ cнαт")
+            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ")
             return
         await lel.edit(
-            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ѕυccєѕѕƒυℓℓу α∂∂є∂ ƒσя υѕєяѕ ιη тнє cнαт {message.chat.id}"
+            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴀᴅᴅᴇᴅ ꜰᴏʀ ᴜꜱᴇʀ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ  {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ωαѕ ησт αcтιναтє∂ ιη тнιѕ cнαт")
+            await lel.edit("𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ᴡᴀꜱ ɴᴏᴛ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ")
             return
         await lel.edit(
-            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ѕυccєѕѕƒυℓℓу ∂єαcтιναтє∂ ƒσя υѕєяѕ ιη тнє cнαт {message.chat.id}"
+            f"𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ᴀɪ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅɪꜱᴀʙʟᴇᴅ ꜰᴏʀ ᴜꜱᴇʀ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
             en_chats.append(chat_id)
-            await message.reply_text("єηgℓιѕн ᴀɪ cнαт єηαвℓє∂!")
+            await message.reply_text("Eɴɢʟɪꜱʜ ᴀɪ Cʜᴀᴛ Eɴᴀʙʟᴇᴅ!")
             return
-        await message.reply_text("ᴀɪ cнαт ιѕ αℓяєα∂у ∂ιѕαвℓє∂.")
+        await message.reply_text("ᴀɪ ᴄʜᴀᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴅɪꜱᴀʙʟᴇᴅ.")
         message.continue_propagation()
     else:
         await message.reply_text(
-            "ι σηℓу яєcσgηιzє `/chatbot on` αη∂ `/chatbot off` σηℓу"
+            "ɪ ᴏɴʟʏ ʀᴇᴄᴏɢɴɪᴢᴇ `/chatbot on` ᴀɴᴅ `/chatbot off` ᴏɴʟʏ"
         )
 
 
@@ -355,11 +355,11 @@ async def inuka(client, message):
 
 
 __help__ = """
-**Chatbot**
+**Cʜᴀᴛʙᴏᴛ**
 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 αι 3.0 cαη ∂єтє¢т & яєρℓу υρтσ 200 ℓαηgυαgєѕ
  - /chatbot [ON|OFF]: єηαвℓєѕ|∂ιѕαвℓєѕ ᴀɪ cнαт мσ∂є (EXCLUSIVE)
  - /chatbot EN : єηαвℓєѕ єηgℓιѕн σηℓу cнαтвσт
  
 """
 
-__mod_name__ = "AI Chatbot🤖"
+__mod_name__ = "AI Cʜᴀᴛʙᴏᴛ🤖"
