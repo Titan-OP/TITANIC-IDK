@@ -33,7 +33,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my pm")
+       await event.reply("🚨 ηєє∂ α∂мιη ρσωєя.. уσυ cαη'т υѕє тнιѕ cσммαη∂.. вυт уσυ cαη υѕє ιη му PM|DM")
        return
 
     start = datetime.now()
@@ -89,15 +89,21 @@ async def _(event):
             # now, remove the temporary file
             os.remove(required_file_name)
     else:
-        await event.reply("Reply to a voice message, to get the text out of it.")
+        await event.reply("яєρℓу тσ α νσιcє мєѕѕαgє, тσ gєт тнє тєχт συт σƒ ιт.")
 
 
 __help__ = """
-I can convert text to voice and voice to text..
- ❍ /tts <lang code>*:* Reply to any message to get text to speech output
- ❍ /stt*:* Type in reply to a voice message(support english only) to extract text from it.
-*Language Codes*
-`af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
+ι cαη cσηνєят тєχт тσ νσιcє αη∂ νσιcє тσ тєχт...
+
+ ✮ /tts <lang code> *:* яєρℓу тσ αηу мєѕѕαgє тσ gєт тєχт тσ ѕρєєcн συтρυт
+
+ ✮ /stt *:* туρє ιη яєρℓу тσ α νσιcє мєѕѕαgє `(ѕυρρσят єηgℓιѕн σηℓу)` тσ єχтяαcт тєχт ƒяσм ιт.
+
+♦️➖➖➖➖➖➖➖➖➖➖➖♦️
+
+*Lᴀɴɢᴜᴀɢᴇ Cᴏᴅᴇꜱ*
+
+ `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
 et,eu,fa,fi,fr,fy,ga,gd,gl,gu,ha,haw,hi,hmn,hr,ht,hu,hy,
 id,ig,is,it,iw,ja,jw,ka,kk,km,kn,ko,ku,ky,la,lb,lo,lt,lv,mg,mi,mk,
 ml,mn,mr,ms,mt,my,ne,nl,no,ny,pa,pl,ps,pt,ro,ru,sd,si,sk,sl,
@@ -105,4 +111,4 @@ sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 """
 
-__mod_name__ = "TTS/STT"
+__mod_name__ = "ᴛᴛꜱ|ꜱᴛᴛ🎤"
