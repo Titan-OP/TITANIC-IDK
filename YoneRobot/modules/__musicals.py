@@ -1,4 +1,4 @@
-__mod_name__ = "Music🎶"
+__mod_name__ = "Mᴜꜱɪᴄ🎶"
 
 __help__ = """
 /video <i>query</i>: ∂σωηℓσα∂ νι∂єσ ƒяσм уσυтυвє
