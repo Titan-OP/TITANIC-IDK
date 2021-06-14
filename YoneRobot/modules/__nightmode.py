@@ -87,11 +87,11 @@ async def profanity(event):
         for c in chats:
             if event.chat_id == c["id"]:
                 await event.reply(
-                    "Please provide some input yes or no.\n\nCurrent setting is : **on**"
+                    "ρℓєαѕє ρяσνι∂є ѕσмє ιηρυт уєѕ σя ησ.\n\ncυяяєηт ѕєттιηg ιѕ : **ᴏɴ**"
                 )
                 return
         await event.reply(
-            "Please provide some input yes or no.\n\nCurrent setting is : **off**"
+            "ρℓєαѕє ρяσνι∂є ѕσмє ιηρυт уєѕ σя ησ.\n\ncυяяєηт ѕєттιηg ιѕ : **ᴏꜰꜰ**"
         )
         return
     if input == "on":
@@ -99,7 +99,7 @@ async def profanity(event):
             chats = nightmod.find({})
             for c in chats:
                 if event.chat_id == c["id"]:
-                    await event.reply("Nightmode is already activated for this chat.")
+                    await event.reply("ηιgнтмσ∂є ιѕ αℓяєα∂у αcтιναтє∂ ƒσя тнιѕ cнαт.")
                     return
             nightmod.insert_one(
                 {
@@ -111,7 +111,7 @@ async def profanity(event):
                 }
             )
             await event.reply(
-                "Nightmode turned on for this chat\n**Note:** It will not work unless you specify time and zone with `/setnightmode`"
+                "ηιgнтмσ∂є тυяηє∂ ση ƒσя тнιѕ cнαт\n**ɴᴏᴛᴇ:** ιт ωιℓℓ ησт ωσяк υηℓєѕѕ уσυ ѕρєcιƒу тιмє αη∂ zσηє ωιтн `/setnightmode`"
             )
     if input == "off":
         if event.is_group:
@@ -119,11 +119,11 @@ async def profanity(event):
             for c in chats:
                 if event.chat_id == c["id"]:
                     nightmod.delete_one({"id": event.chat_id})
-                    await event.reply("Nightmode turned off for this chat.")
+                    await event.reply("ηιgнтмσ∂є тυяηє∂ σƒƒ ƒσя тнιѕ cнαт.")
                     return
-        await event.reply("Nightmode isn't turned on for this chat.")
+        await event.reply("ηιgнтмσ∂є ιѕη'т тυяηє∂ ση ƒσя тнιѕ cнαт.")
     if not input == "on" and not input == "off":
-        await event.reply("I only understand by on or off")
+        await event.reply("ι σηℓу υη∂єяѕтαη∂ ву ση σя σƒƒ")
         return
 
 
@@ -143,19 +143,19 @@ async def _(event):
         ctime = ctime.strip()
         otime = otime.strip()
         if len(ctime) != 11:
-            await event.reply("Please enter valid date and time.")
+            await event.reply("ρℓєαѕє єηтєя ναℓι∂ ∂αтє αη∂ тιмє.")
             return
         if len(otime) != 11:
-            await event.reply("Please enter valid date and time.")
+            await event.reply("ρℓєαѕє єηтєя ναℓι∂ ∂αтє αη∂ тιмє.")
             return
         if not zone and ctime and otime:
-            await event.reply("Missing some parameters.")
+            await event.reply("мιѕѕιηg ѕσмє ραяαмєтєяѕ.")
             return
         ttime = dateparser.parse(
             "now", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "YMD"}
         )
         if ttime == None or otime == None or ctime == None:
-            await event.reply("Please enter valid date and time and zone.")
+            await event.reply("ρℓєαѕє єηтєя ναℓι∂ ∂αтє αη∂ тιмє αη∂ zσηє.")
             return
         cctime = dateparser.parse(
             f"{ctime}", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "DMY"}
@@ -164,13 +164,13 @@ async def _(event):
             f"{otime}", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "DMY"}
         ) + timedelta(days=1)
         if cctime == ootime:
-            await event.reply("Chat opening and closing time cannot be same.")
+            await event.reply("cнαт σρєηιηg αη∂ cℓσѕιηg тιмє cαηησт вє ѕαмє..")
             return
         if not ootime > cctime and not cctime < ootime:
-            await event.reply("Chat opening time must be greater than closing time")
+            await event.reply("cнαт σρєηιηg тιмє must вє greater тнαη cℓσѕιηg тιмє")
             return
         if cctime > ootime:
-            await event.reply("Chat closing time cant be greater than opening time")
+            await event.reply("cнαт cℓσѕιηg тιмє cant вє greater тнαη σρєηιηg тιмє")
             return
         # print (ttime)
         # print (cctime)
@@ -193,7 +193,7 @@ async def _(event):
                     {"$set": {"zone": zone, "ctime": cctime, "otime": ootime}},
                 )
                 await event.reply(
-                    "Nightmode already set.\nI am updating the zone, closing time and opening time with the new zone, closing time and opening time."
+                    "ηιgнтмσ∂є αℓяєα∂у ѕєт.\nι αм υρ∂αтιηg тнє zσηє, cℓσѕιηg тιмє αη∂ σρєηιηg тιмє ωιтн тнє ηєω zσηє, cℓσѕιηg тιмє αη∂ σρєηιηg тιмє."
                 )
                 return
         nightmod.insert_one(
@@ -205,7 +205,7 @@ async def _(event):
                 "otime": ootime,
             }
         )
-        await event.reply("Nightmode set successfully !")
+        await event.reply("ηιgнтмσ∂є ѕєт ѕυccєѕѕƒυℓℓу !")
     except Exception as e:
         print(e)
 
@@ -229,7 +229,7 @@ async def _(event):
             if present > ctime and valid:
                 await tbot.send_message(
                     id,
-                    f"**Nightbot:** It's time closing the chat now ...",
+                    f"**ɴɪɢʜᴛʙᴏᴛ:** ιт'ѕ тιмє cℓσѕιηg тнє cнαт ησω ...",
                 )
                 await tbot(
                     functions.messages.EditChatDefaultBannedRightsRequest(
@@ -279,7 +279,7 @@ async def _(event):
             if present > otime and valid:
                 await tbot.send_message(
                     id,
-                    f"**Nightbot:** It's time opening the chat now ...",
+                    f"**ɴɪɢʜᴛʙᴏᴛ:** ιт'ѕ тιмє σρєηιηg тнє cнαт ησω ...",
                 )
                 await tbot(
                     functions.messages.EditChatDefaultBannedRightsRequest(
