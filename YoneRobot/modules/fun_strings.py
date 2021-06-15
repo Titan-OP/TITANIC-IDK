@@ -8,7 +8,7 @@ RUN_STRINGS = (
     "Chotto matte!",
     "Yare yare daze",
     "*Naruto run activated*",
-    "*Nezuko run activated*",
+    "*TITAN run activated*",
     "Hey take responsibilty for what you just did!",
     "May the odds be ever in your favour.",
     "Run everyone, they just dropped a bomb 💣💣",
@@ -26,14 +26,14 @@ GIFS = [
 ]
 
 SLAP_YONE_TEMPLATES = (
-    "Slap me one more time and I'll mute you.",
-    "Stop slapping me. REEEEEEEEEEEEEE.",
+    "Slap me one more time and I'll mute you.🤨",
+    "Stop slapping me. REEEEEEEEEEEEEE.😐",
     [
-        "I am muting you for a minute.",  # normal reply
-        "Stop slapping me just because I can't mute you. REEEEEEEEEE.",  # reply to admin
+        "I am muting you for a minute.🙄",  # normal reply
+        "Stop slapping me just because I can't mute you. REEEEEEEEEE.😭",  # reply to admin
         "tmute",  # command
-        "Shut up!",
-        "Silence!",
+        "Shut up!🤣",
+        "Silence!🤫",
     ],
 )
 
@@ -42,8 +42,9 @@ SLAP_TEMPLATES = (
     "{user2} starved without pats.",
     "{user2} was knocked into the void by {user1}.",
     "{user2} fainted.",
-    "{user2} is out of usable Pokemon! {user2} whited out!.",
-    "{user2} is out of usable Pokemon! {user2} blacked out!.",
+    "{user2} is out of usable Pokemon! \n{user2} whited out!.",
+    "{user2} is out of usable Pokemon! \n{user2} blacked out!.",
+    "{user2} is out of usable Pokemon! \n{user2} won the match!",
     "{user2} got rekt.",
     "{user2}'s melon was split by {user1}.",
     "{user2} was sliced and diced by {user1}.",
@@ -142,6 +143,7 @@ SLAP_TEMPLATES = (
     "@NeoTheKitty scratches {user2}",  # Pixels pet cat - @NeoTheKitty
     "Majin buu ate {user2}",  # Dbz
     "Goblin slayer slays {user2}",  # Goblin Slayer
+    "{user2} is knocked by {user1}, with the help of TITAN POWER🤣
 )
 
 PAT_TEMPLATES = (
@@ -185,11 +187,20 @@ PAT_TEMPLATES = (
 PAT_GIFS = (
     "CgACAgQAAxkBAALRX19Xs7tBdOH1gQwS_rglVRkTbgVYAAKEAgACmQn9UWlyGa_xy9_aGwQ",
     "CgACAgEAAxkBAALRYF9Xs8EnhsDfDpld3ILoqTbzDmwxAAJFAAOJxjlHECanwn69E5QbBA",
+    "CgACAgQAAx0CVTtJdwABBg3cYMiWJzOzhUMWft9Ur6K8Z6PzlBEAAkoCAAIxTzRSFJYffAikCU0fBA",
+    "CgACAgQAAx0CVTtJdwABBg3qYMiW1Xrj10ygaOJa7zckG3pMjtEAAigCAALDAAGUUp0DeCDidqdWHwQ",
+    "CgACAgQAAx0CVTtJdwABBg3uYMiXPkvT5M70EwXSHIkoO9gWHmcAAmoCAAIcup1SO0SCgY-puKsfBA",
+    "CgACAgQAAx0CVTtJdwABBg3wYMiXVroTT216UdUq8R-fr81EgnMAAkYCAAJY0JRSDbV2vJkypZcfBA",
+    "CgACAgQAAx0CVTtJdwABBg3xYMiXXFhug-m0KfkhTYVCj25C0tIAAhQCAAJMXYxSbnYY6tiOMUsfBA",
 )
 
 PAT_STICKERS = (
     "CAACAgQAAxkBAALRWV9Xs4HH0XaXfhZe-jWaZoXfs-IsAAJYAwACdDgSEHYOt4KvL02oGwQ",
     "CAACAgQAAxkBAALRXF9Xs6XmIeDbnoL1wiDky0TdX-CvAAKKAQAC1TMzC9A3CtiT2rqVGwQ",
+    "CAACAgUAAx0CVTtJdwABBg4HYMiX73HR\_HQqs6gFpPsEUD4He44AAjYCAALjm8hVzTNR0u1yL98fBA",
+    "CAACAgUAAx0CVTtJdwABBg4IYMiX8q2ekdPkSWMwoMSlsRvBeXcAAggCAAJqCoFXGS4fUSmO2c4fBA",
+    "CAACAgUAAx0CVTtJdwABBg4KYMiX9i8tnDD74vOKvUoYLanrTAkAAt0BAAJwVYFX9w5K-NKrcBkfBA",
+    "CAACAgUAAx0CVTtJdwABBg4LYMiX-ZQKj2LVmQhoptMNBX5rqycAAp4BAAISBqhXWOFK8UPorb0fBA",
 )
 
 PING_STRING = (
@@ -411,7 +422,10 @@ EARS = [
     ["(∩", ")⊃━☆ﾟ.*"],
 ]
 
-TOSS = ("Heads", "Tails")
+TOSS = (
+    "**You Flipped The coin and its an**\n\nHeads💰",
+    "**You Flipped The coin and its an**\n\nTails💰",
+)
 
 EIGHTBALL = [
     "🟢 As I see it, yes.",
@@ -436,10 +450,17 @@ EIGHTBALL = [
     "🟢 You may rely on it.",
 ]
 
-DECIDE = ("Yes.", "No.", "Maybe.")
+DECIDE = ("Yes.✔️", "No.❌", "Maybe.⭕")
 
 TABLE = (
     "(╯°□°）╯彡 ┻━┻",
-    "I ran out of tables, will order more.",
-    "Go do some work instead of flippin tables.",
+    "(┛◉Д◉)┛彡┻━┻
+    "┻━┻ ヘ╰( •̀ε•́ ╰)
+    "(┛❍ᴥ❍)┛彡┻━┻
+    "┬─┬ノ(ಠ_ಠノ)
+    "┻━┻︵└(՞▽՞ └)
+    "(ノಥ,_｣ಥ)ノ彡┻━┻
+    "(┛✧Д✧))┛彡┻━┻
+    "Send money for buying new table to flip.🙄",
+    "Go do some work instead of flipping tables.😂",
 )
