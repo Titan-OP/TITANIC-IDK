@@ -38,11 +38,15 @@ async def _(event):
 
 __help__ = """
  *Play Game With Emojis:*
-  - /dice or /dice 1 to 6 any value
-  - /ball or /ball 1 to 5 any value
-  - /dart or /dart 1 to 6 any value
- Usage: hahaha just a magic.
- warning: you would be in trouble if you input any other value than mentioned.
+  
+  ✮ /dice σя /dice 1 тσ 6 αηу ναℓυє
+ 
+  ✮ /ball σя /ball 1 тσ 5 αηу ναℓυє
+
+  ✮ /dart σя /dart 1 тσ 6 αηу ναℓυє
+       `𝚄𝚜𝚊𝚐𝚎: 𝚑𝚊𝚑𝚊𝚑𝚊 𝚓𝚞𝚜𝚝 𝚊 𝚖𝚊𝚐𝚒𝚌.`
+
+  `⚠️ᴡᴀʀɴɪɴɢ: ʏᴏᴜ ᴡᴏᴜʟᴅ ʙᴇ ɪɴ ᴛʀᴏᴜʙʟᴇ ɪꜰ ʏᴏᴜ ɪɴᴘᴜᴛ ᴀɴʏ ᴏᴛʜᴇʀ ᴠᴀʟᴜᴇ ᴛʜᴀɴ ᴍᴇɴᴛɪᴏɴᴇᴅ.`
 """
 
-__mod_name__ = "Games"
+__mod_name__ = "Gᴀᴍᴇꜱ🎮"
