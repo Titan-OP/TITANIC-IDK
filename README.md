@@ -14,7 +14,7 @@
 ---------------------------------------------------------------------------- 
 
 ## Sᴛᴀᴛᴜs Oғ Tʜɪs Bᴏᴛ
-<p align="left"><a href="https://github.com/Titan-OP/TITAN-ROBOT/network/members"><img src="https://img.shields.io/github/forks/Titan-OP/TITAN-ROBOT?label=Forks&logoColor=pink&style=social"></a><p align="left"><a href="https://github.com/Titan-OP/TITAN-ROBOT/stargazers"><img src="https://img.shields.io/github/stars/Titan-OP/TITAN-ROBOT?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/Titan-OP/TITAN-ROBOT"><img src="https://img.shields.io/github/last-commit/Titan-OP/TITAN-ROBOT?style=plastic"></a> 
+<p align="left"><a href="https://github.com/Titan-OP/TITANIC-IDK/network/members"><img src="https://img.shields.io/github/forks/Titan-OP/TITANIC-IDK?label=Forks&logoColor=pink&style=social"></a><p align="left"><a href="https://github.com/Titan-OP/TITANIC-IDK/stargazers"><img src="https://img.shields.io/github/stars/Titan-OP/TITANIC-IDK?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/Titan-OP/TITANIC-IDK"><img src="https://img.shields.io/github/last-commit/Titan-OP/TITANIC-IDK?style=plastic"></a> 
 
 ----------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@
 
 ## **¢нє¢к тнιѕ вσт ιη тєℓєgяαм** 
  
-<a href="https://telegram.me/titan1v0_bot"><img src="https://img.shields.io/badge/BOT-%F0%9D%90%93%F0%9D%90%88%F0%9D%90%93%F0%9D%90%80%F0%9D%90%8D%20%F0%9D%9F%90.%F0%9D%9F%8E-orange.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/Titan1v0_bot"><img src="https://img.shields.io/badge/BOT-%F0%9D%90%93%F0%9D%90%88%F0%9D%90%93%F0%9D%90%80%F0%9D%90%8D%20%F0%9D%9F%90.%F0%9D%9F%8E-orange.svg?style=for-the-badge&logo=Telegram"></a>
 
 ----------------------------------------------------------------------------
 
@@ -49,14 +49,14 @@
 ----------------------------------------------------------------------------
 # **ƒσя мσяє нєℓρ נσιη**
 
-<a href="https://telegram.me/TITAN_SUPPORT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/TITAN_UPDATES"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://telegram.me/TITANX_CHAT"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>      
 
 ----------------------------------------------------------------------------
   
 # **нσω тσ ∂єρℓσу уσυя σωη 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎**
 
-**ꜰɪʀꜱᴛ ᴅᴏ**  | <a href="https://github.com/Titan-OP/TITAN-ROBOT/network/members"><img src="https://img.shields.io/badge/-FORK-blue.svg?style=for-the-badge&logo=Github"></a> |  **ᴛʜᴇɴ ᴅᴏ ꜱᴏᴍᴇ ʀᴇQᴜɪʀᴇᴅ ᴄʜᴀɴɢᴇꜱ ɪɴ __ᴍᴀɪɴ__.ᴘʏ , ᴛʜᴇɴ ᴛᴜʀɴ ᴏꜰꜰ ᴡᴇʙ ᴅʏɴᴏꜱ ᴀɴᴅ ᴛᴜʀɴ ᴏɴ ᴡᴏʀᴋᴇʀ ᴅʏɴᴏꜱ.ᴛʜᴇɴ ɪꜰ ᴇʀʀᴏʀ ᴄᴀᴍᴇ ᴛʜᴇɴ ɢᴏ ᴛᴏ ʜᴇʀᴏᴋᴜ ᴀɴᴅ ʀᴇᴠᴇᴀʟ ᴄᴏɴꜰɪɢ ᴠᴀʀ ᴀɴᴅ ᴅᴇʟᴇᴛᴇ ᴘᴏʀᴛ ᴀɴᴅ ᴡʜᴇᴇʙᴏᴏᴋ , ᴛʜᴇɴ ᴡᴀɪᴛ 2 - 3 ᴍɪɴ ᴀɴᴅ ʙᴏᴛ ꜱᴛᴀʀᴛ.** 😊
+**ꜰɪʀꜱᴛ ᴅᴏ**  | <a href="https://github.com/Titan-OP/TITANIC-IDK/network/members"><img src="https://img.shields.io/badge/-FORK-blue.svg?style=for-the-badge&logo=Github"></a> |  **ᴛʜᴇɴ ᴅᴏ ꜱᴏᴍᴇ ʀᴇQᴜɪʀᴇᴅ ᴄʜᴀɴɢᴇꜱ ɪɴ __ᴍᴀɪɴ__.ᴘʏ , ᴛʜᴇɴ ᴛᴜʀɴ ᴏꜰꜰ ᴡᴇʙ ᴅʏɴᴏꜱ ᴀɴᴅ ᴛᴜʀɴ ᴏɴ ᴡᴏʀᴋᴇʀ ᴅʏɴᴏꜱ.ᴛʜᴇɴ ɪꜰ ᴇʀʀᴏʀ ᴄᴀᴍᴇ ᴛʜᴇɴ ɢᴏ ᴛᴏ ʜᴇʀᴏᴋᴜ ᴀɴᴅ ʀᴇᴠᴇᴀʟ ᴄᴏɴꜰɪɢ ᴠᴀʀ ᴀɴᴅ ᴅᴇʟᴇᴛᴇ ᴘᴏʀᴛ ᴀɴᴅ ᴡʜᴇᴇʙᴏᴏᴋ , ᴛʜᴇɴ ᴡᴀɪᴛ 2 - 3 ᴍɪɴ ᴀɴᴅ ʙᴏᴛ ꜱᴛᴀʀᴛ.** 😊
 **ᴇᴠᴇɴ ᴛʜᴇɴ ᴀɴʏ ᴇʀʀᴏʀ ᴄᴀᴍᴇ ᴛʜᴇɴ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ ᴅɪʀᴇᴄᴛʟʏ ᴍᴇꜱꜱᴀɢᴇ ᴏɴ.....**   <a href="https://telegram.me/TITANX_CHAT"><img src="https://img.shields.io/badge/-SUPPORT%20GROUP-brightgreen.svg?style=for-the-badge&logo=Telegram"></a>
 
 ----------------------------------------------------------------------------
@@ -83,5 +83,5 @@
 
 ➥ **кαηєкι**  
 
-<a href="https://github.com/kanekiken44" alt="Kᴀɴᴇᴋɪ"> <img src="https://img.shields.io/badge/-K%E1%B4%80%C9%B4%E1%B4%87%E1%B4%8B%C9%AA-brightgreen?logo=github" /></a>      <a href="https://telegram.me/Kaneki_66" alt="Kᴀɴᴇᴋɪ"> <img src="https://img.shields.io/badge/-K%E1%B4%80%C9%B4%E1%B4%87%E1%B4%8B%C9%AA-orange?logo=telegram" /></a>
+<a href="https://github.com/kanekiken44" alt="Kᴀɴᴇᴋɪ"> <img src="https://img.shields.io/badge/-K%E1%B4%80%C9%B4%E1%B4%87%E1%B4%8B%C9%AA-brightgreen?logo=github" /></a>      <a href="https://telegram.me/Kaneki_ded2" alt="Kᴀɴᴇᴋɪ"> <img src="https://img.shields.io/badge/-K%E1%B4%80%C9%B4%E1%B4%87%E1%B4%8B%C9%AA-orange?logo=telegram" /></a>
 
