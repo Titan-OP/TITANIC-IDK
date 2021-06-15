@@ -1,24 +1,31 @@
-__mod_name__ = "◎Tools"
+__mod_name__ = "Tᴏᴏʟꜱ🧩"
 
 __help__ = """
 *Telegraph*
- ❍ /txm :Get Telegraph Link Of Replied Media
- ❍ /txt :Get Telegraph Link of Replied Text
 
-*Chatbot* 
-_Admins only:_
- ❍ /addchat*:* Enables Chatbot mode in the chat.
- ❍ /rmchat*:* Disables Chatbot mode in the chat.
+  ✮ /tm `(reply to any media)` *:* gєт тєℓєgяαρн ℓιηк σƒ яєρℓιє∂ мє∂ια
+
+➖➖➖➖➖➖➖➖➖➖➖➖
 
 *Date-time-Weather*
- ❍ /time <country code>*:* Gives information about a timezone.
- ❍ /weather <city>*:* Get weather info in a particular place.
- ❍ /wttr <city>*:* Advanced weather module, usage same as /weather
- ❍ /wttr moon*:* Get the current status of moon
+
+  ✮ /time `<country code>` *:* gινєѕ ιηƒσямαтιση αвσυт α тιмєzσηє.
+
+  ✮ /weather `<city>` *:* gєт ωєαтнєя ιηƒσ ιη α ραятιcυℓαя ρℓαcє.
+
+  ✮ /wttr `<city>` *:* α∂ναηcє∂ ωєαтнєя мσ∂υℓє, υѕαgє ѕαмє αѕ `/weather`
+
+  ✮ /wttr moon *:* gєт тнє cυяяєηт ѕтαтυѕ σƒ мσση
+
+➖➖➖➖➖➖➖➖➖➖➖➖
 
 *Converts*
- ❍ /encrypt*:* Encrypts The Given Text
- ❍ /decrypt*:* Decrypts Previously Ecrypted Text
- ❍ /zip*:* reply to a telegram file to compress it in .zip format
- ❍ /unzip*:* reply to a telegram file to decompress it from the .zip format
+
+  ✮ /encrypt *:* єηcяуρтѕ тнє gινєη тєχт
+
+  ✮ /decrypt *:* ∂є¢яуρтѕ ρяєνισυѕℓу єcяуρтє∂ тєχт
+
+  ✮ /zip *:* яєρℓу тσ α тєℓєgяαм ƒιℓє тσ cσмρяєѕѕ ιт ιη `.zip` ƒσямαт
+
+  ✮ /unzip *:* яєρℓу тσ α тєℓєgяαм ƒιℓє тσ ∂єcσмρяєѕѕ ιт ƒяσм тнє .zip ƒσямαт
 """
