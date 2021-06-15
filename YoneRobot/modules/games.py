@@ -9,7 +9,7 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     r = await event.reply(file=InputMediaDice(""))
-    input_int = int(input_string)
+    input_int = int(input_str)
     if input_int > 6:
         await event.reply("hey nigga use number 1 to 6 only")
 
