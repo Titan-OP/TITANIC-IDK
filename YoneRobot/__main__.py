@@ -94,9 +94,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="👑 Cʀᴇᴀᴛᴏʀ 👑", url=f"https://t.me/DARK_DEVIL_OP"),
+        InlineKeyboardButton(text="📍 Uᴘᴅᴀᴛᴇꜱ 📍", url=f"https://t.me/TITAN_UPDATES"),
         InlineKeyboardButton(
-            text="📍 Uᴘᴅᴀᴛᴇꜱ 📍", url=f"https://t.me/TITAN_UPDATES"
+            text="👑 Cʀᴇᴀᴛᴏʀ 👑", url=f"https://t.me/DARK_DEVIL_OP"
         ),
     ],
     [
