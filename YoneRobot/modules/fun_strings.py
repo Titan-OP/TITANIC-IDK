@@ -143,7 +143,7 @@ SLAP_TEMPLATES = (
     "@NeoTheKitty scratches {user2}",  # Pixels pet cat - @NeoTheKitty
     "Majin buu ate {user2}",  # Dbz
     "Goblin slayer slays {user2}",  # Goblin Slayer
-    "{user2} is knocked by {user1}, with the help of TITAN POWER🤣
+    "{user2} is knocked by {user1}, with the help of TITAN POWER🤣", #TITAN IS OP😎😎😎😎😎😎😎😎😎😎😎
 )
 
 PAT_TEMPLATES = (
