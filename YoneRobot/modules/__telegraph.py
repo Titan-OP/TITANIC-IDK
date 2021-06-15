@@ -28,7 +28,7 @@ async def _(event):
             )
             end = datetime.now()
             ms = (end - start).seconds
-            h = await event.reply("∂σωηℓσα∂є∂ тσ {} ιη {} ѕєcση∂ѕ."format(downloaded_file_name, ms))
+            h = await event.reply("∂σωηℓσα∂є∂ тσ {} ιη {} ѕєcση∂ѕ.".format(downloaded_file_name, ms))
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)
             try:
