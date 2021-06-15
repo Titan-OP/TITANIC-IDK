@@ -90,11 +90,14 @@ buttons = [
     [
         InlineKeyboardButton(text="『 ɪɴꜰᴏ 』", callback_data="yone_"),
         InlineKeyboardButton(
-            text="🔶 Sᴜᴘᴘᴏʀᴛ 🔶", url=f"https://t.me/TITANX_CHAT"
+            text="❇️ Sᴜᴘᴘᴏʀᴛ ❇️", url=f"https://t.me/TITANX_CHAT"
         ),
     ],
     [
         InlineKeyboardButton(text="👑 Cʀᴇᴀᴛᴏʀ 👑", url=f"https://t.me/DARK_DEVIL_OP"),
+        InlineKeyboardButton(
+            text="📍 Uᴘᴅᴀᴛᴇꜱ 📍", url=f"https://t.me/TITAN_UPDATES"
+        ),
     ],
     [
         InlineKeyboardButton(text="🔷 Hᴇʟᴘ Mᴇɴᴜ 🔷", callback_data="help_back"),
