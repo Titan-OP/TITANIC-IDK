@@ -5,7 +5,7 @@ from YoneRobot import pbot
 from YoneRobot.pyrogramee.errors import capture_err
 
 
-__mod_name__ = "Github"
+__mod_name__ = "Gɪᴛʜᴜʙ🐈"
 
 
 @pbot.on_message(filters.command('github'))
@@ -35,16 +35,25 @@ async def github(_, message):
                 followers = result['followers']
                 following = result['following']
                 caption = f"""**Info Of {name}**
-**Username:** `{username}`
-**Bio:** `{bio}`
-**Profile Link:** [Here]({url})
-**Company:** `{company}`
-**Created On:** `{created_at}`
-**Repositories:** `{repositories}`
-**Blog:** `{blog}`
-**Location:** `{location}`
-**Followers:** `{followers}`
-**Following:** `{following}`"""
+✧ **𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞:** `{username}`
+
+✧ **𝐁𝐢𝐨:** `{bio}`
+
+✧ **𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐋𝐢𝐧𝐤:** [Here]({url})
+
+✧ **𝐂𝐨𝐦𝐩𝐚𝐧𝐲:** `{company}`
+
+✧ **𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐎𝐧:** `{created_at}`
+
+✧ **𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐞𝐬:** `{repositories}`
+
+✧ **𝐁𝐥𝐨𝐠:** `{blog}`
+
+✧ **𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧:** `{location}`
+
+✧ **𝐅𝐨𝐥𝐥𝐨𝐰𝐞𝐫𝐬:** `{followers}`
+
+✧ **𝐅𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠:** `{following}`"""
             except Exception as e:
                 print(str(e))
                 pass
