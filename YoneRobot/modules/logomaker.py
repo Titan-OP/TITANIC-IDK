@@ -45,7 +45,7 @@ async def lego(event):
 
 
    
-@register(pattern="^/frame ?(.*)")
+@register(pattern="^/ptxt ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -53,11 +53,11 @@ async def lego(event):
  else:
      
     if not quew:
-       await event.reply('ρяσνι∂є ѕσмє тєχт тσ ∂яαω!')
+       await event.reply('ρяσνι∂є ѕσмє тєχт тσ ρяιηт!')
        return
     else:
        pass
- await event.reply('¢яєαтιηg уσυя ℓσgσ...ωαιт!')
+ await event.reply('ρяιηтιηg уσυя тєχт...ωαιт!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./YoneRobot/resources/blackbg.jpg')
@@ -89,5 +89,7 @@ file_helpo = file_help.replace("_", " ")
 
 __help__ = """
  ✮ /logo `<text>` **:**  TITAN BOT will Create your logo with your name given.
+
+ ✮ /ptxt `<text>` **:** TITAN BOT prints your name as pic.
  """
 __mod_name__ = "Lᴏɢᴏ🖼️"
