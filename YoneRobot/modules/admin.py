@@ -618,6 +618,14 @@ def adminlist(update, context):
             )
             custom_admin_list.pop(admin_group)
 
+    text += "\n"
+    for admin_group, value in custom_admin_list.items():
+        text += "\n🚨 <code>{}</code>".format(admin_group)
+        for admin in value:
+            text += "\n<code> • </code>{}".format(admin)
+        text += "\n"
+
+
     text += "\n🤖 Bᴏᴛꜱ:"
     for each_bot in bot_admin_list:
         text += "\n<code> • </code>{}".format(each_bot)
