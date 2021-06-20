@@ -11,7 +11,9 @@ from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
 
-AFK_VID = "https://telegra.ph/file/50779b117734f28564163.mp4"
+AFK_VID = "https://telegra.ph/file/c1151e4efbb0baf8eff51.mp4"
+USER_BACK = "https://telegra.ph/file/7a05f54e91f895aac0487.mp4"
+AFK_REASON_VID = "https://telegra.ph/file/d56d712ced752433fdde0.mp4"
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
@@ -39,9 +41,12 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_video(
-                AFK_VID)
-        update.effective_message.reply_text("{} is now away!{}".format(fname, notice))
+        afk = [
+                "{} is now AFK!",
+                "bye bye, {}!",
+        ]
+        chosen_msg = random.choice(afk)
+        update.effective_message.reply_animation(AFK_VID, caption=chosen_msg.format(fname))
     except BadRequest:
         pass
 
@@ -61,17 +66,15 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} is here!",
                 "{} is back!",
-                "{} is now in the chat!",
-                "{} is awake!",
-                "{} is back online!",
+                "welcome back {}!",
+                "yo, {} is here!",
+                "{} is online!",
                 "{} is finally here!",
                 "Welcome back! {}",
-                "Where is {}?\nIn the chat!",
             ]
             chosen_option = random.choice(options)
-            update.effective_message.reply_text(chosen_option.format(firstname))
+            update.effective_message.reply_animation(USER_BACK, caption=chosen_option.format(firstname))
         except:
             return
 
@@ -154,7 +157,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "🏃AFK"
+__mod_name__ = "AFK🏃"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
