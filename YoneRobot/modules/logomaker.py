@@ -13,11 +13,11 @@ async def lego(event):
  else:
      
     if not quew:
-       await event.reply('Provide Some Text To Draw!')
+       await event.reply('ρяσνι∂є ѕσмє тєχт тσ ∂яαω!')
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('cяєαтιηg уσυя ℓσgσ...ωαιт!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./YoneRobot/resources/blackbg.jpg')
@@ -36,11 +36,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByYone.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By Nezuko")
+    await tbot.send_file(event.chat_id, fname2, caption="**мα∂є ву 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎**")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @nezukosupport1, {e}')
+   await event.reply(f'Error Report @TITANX_CHAT, {e}')
 
 
 
@@ -53,11 +53,11 @@ async def lego(event):
  else:
      
     if not quew:
-       await event.reply('Provide Some Text To Draw!')
+       await event.reply('ρяσνι∂є ѕσмє тєχт тσ ∂яαω!')
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('¢яєαтιηg уσυя ℓσgσ...ωαιт!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./YoneRobot/resources/blackbg.jpg')
@@ -76,11 +76,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
     fname2 = "LogoByYone.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By Nezuko")
+    await tbot.send_file(event.chat_id, fname2, caption="**мα∂є ву 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎**")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @nezukosupport1, {e}')
+   await event.reply(f'Error Report @TITANX_CHAT, {e}')
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
@@ -88,7 +88,8 @@ file_helpo = file_help.replace("_", " ")
 
 
 __help__ = """
- ❍ /logo text :  Create your logo with your name
+ ✮ /logo `<text>` **:**  TITAN BOT will Create your logo with your name given.
 
+ ✮ /logo `<text> (reply to a image)` **:** TITAN BOT will create your logo with your logo name one the image given.
  """
-__mod_name__ = "Logo"
+__mod_name__ = "Lᴏɢᴏ🖼️"
