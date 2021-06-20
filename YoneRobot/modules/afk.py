@@ -13,10 +13,12 @@ from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
 
 AFK_VID = "https://telegra.ph/file/c1151e4efbb0baf8eff51.mp4"
 USER_BACK = "https://telegra.ph/file/7a05f54e91f895aac0487.mp4"
-AFK_REASON_VID = "https://telegra.ph/file/d56d712ced752433fdde0.mp4"
+AFK_REASON_VID = [ "https://telegra.ph/file/57784cea63d602e64ca9f.mp4"
+                   "https://telegra.ph/file/d56d712ced752433fdde0.mp4"
+]
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
-
+chosen_vid = random.choice(AFK_REASON_VID)
 
 @run_async
 def afk(update: Update, context: CallbackContext):
@@ -137,12 +139,12 @@ def check_afk(update, context, user_id, fst_name, userc_id):
             return
         if not user.reason:
             mess = "{} is afk".format(fst_name)
-            update.effective_message.reply_animation(AFK_REASON_VID, caption=mess)
+            update.effective_message.reply_animation(chosen_vid, caption=mess)
         else:
             res = "{} is afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
-            update.effective_message.reply_animation(AFK_REASON_VID, caption=res, parse_mode="html")
+            update.effective_message.reply_animation(chosen_vid, caption=res, parse_mode="html")
 
 
 
