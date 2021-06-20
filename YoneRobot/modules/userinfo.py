@@ -241,21 +241,21 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
-        f"ID: <code>{user.id}</code>\n"
-        f"First Name: {html.escape(user.first_name)}"
+        f"「<b> Appraisal results</b>」\n"
+        f"✪ ID: <code>{user.id}</code>\n"
+        f"✪ First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\nLast Name: {html.escape(user.last_name)}"
+        text += f"\n✪ Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\nUsername: @{html.escape(user.username)}"
+        text += f"\n✪ Username: @{html.escape(user.username)}"
 
-    text += f"\nPermalink: {mention_html(user.id, 'link')}"
+    text += f"\n✪ User Permanent link: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\nPresence: <code>{}</code>"
+        _stext = "\n∘Presence: <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -287,26 +287,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'God'."
+        text += "\n\nHe has the highest rank 'kinoe'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Hero Association'."
+        text += "\n\nHis rank is 'KINOTO'\nThis user is member of [This](https://t.me/TITAN_UPDATES)."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Dragon'."
+        text += "\n\nThe Disaster level of this person is 'HINOE'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Demon'."
+        text += "\n\nThe Disaster level of this person is 'DEMONS'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Tiger'."
+        text += "\n\nThe Disaster level of this person is 'KANAO'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wolf'."
+        text += "\n\nThe Disaster level of this person is 'MIZUNOE'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/OnePunchUpdates/155">?</a>]'.format(
+        text += ' [<a href="https://t.me/TITAN_UPDATES/26">?</a>]'.format(
             bot.username
         )
 
@@ -422,7 +422,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>📊 Current stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b> Γ📊Current stats」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
@@ -517,31 +517,37 @@ def __user_info__(user_id):
 
 
 __help__ = """
-*Away from group*
- ❍ /afk <reason>*:* mark yourself as AFK(away from keyboard).
- ❍ brb <reason>*:* same as the afk command - but not a command.
+*Away from Keyboard*
+ ✮ /afk `<reason>` *:* mark yourself as AFK(away from keyboard).
+
+ ✮ brb `<reason>` *:* same as the afk command - but not a command.
 When marked as AFK, any mentions will be replied to with a message to say you're not available!
 
 *ID:*
- ❍ /id*:* get the current group id. If used by replying to a message, gets that user's id.
- ❍ /gifid*:* reply to a gif to me to tell you its file ID.
+ ✮ /id *:* get the current group id. If used by replying to a message, gets that user's ID.
+
+ ✮ /gifid *:* reply to a gif to me to tell you its file ID.
+
+ ✮ /stickerid *:* reply to any sticker to get that sticker ID.
 
 *Self addded information:* 
- ❍ /setme <text>*:* will set your info
- ❍ /me*:* will get your or another user's info.
+ ✮ /setme `<text>` *:* will set your info
+
+ ✮ /me *:* will get your or another user's info.
 *Examples:* 💡
- ➩ /setme I am a wolf.
- ➩ /me @username(defaults to yours if no user specified)
+ ➩ `/setme I am a wolf.`
+ ➩ `/me @username(defaults to yours if no user specified)`
 
 *Information others add on you:* 
- ❍ /bio*:* will get your or another user's bio. This cannot be set by yourself.
- ❍ /setbio <text>*:* while replying, will save another user's bio 
+ ✮ /bio *:* will get your or another user's bio. This cannot be set by yourself.
+
+ ✮ /setbio `<text>` *:* while replying, will save another user's bio 
 *Examples:* 💡
- ➩ /bio @username(defaults to yours if not specified).`
- ➩ /setbio This user is a wolf` (reply to the user)
+ ➩ `/bio @username(defaults to yours if not specified).`
+ ➩ `/setbio This user is a wolf (reply to the user)`
 
 *Overall Information about you:*
- ❍ /info*:* get information about a user. 
+ ✮ /info *:* get information about a user. 
  
 *What is that health thingy?*
  Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
@@ -567,7 +573,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Infos"
+__mod_name__ = "Iɴꜰᴏ📰"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
