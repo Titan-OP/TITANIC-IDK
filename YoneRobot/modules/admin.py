@@ -51,7 +51,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         and user.id not in DRAGONS
     ):
         message.reply_text("You don't have the necessary rights to do that!")
-        return
+        return 
 
     user_id = extract_user(message, args)
 
@@ -574,13 +574,13 @@ def adminlist(update, context):
         # if user.username:
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 👑 Creator:"
+            text += "\n 👑 Cʀᴇᴀᴛᴏʀ:"
             text += "\n<code> • </code>{}\n".format(name)
 
             if custom_title:
                 text += f"<code> ┗━ {html.escape(custom_title)}</code>\n"
 
-    text += "\n🔱 Admins:"
+    text += "\n🔱 Aᴅᴍɪɴꜱ:"
 
     custom_admin_list = {}
     normal_admin_list = []
@@ -626,7 +626,7 @@ def adminlist(update, context):
             text += "\n<code> • </code>{}".format(admin)
         text += "\n"
 
-    text += "\n🤖 Bots:"
+    text += "\n🤖 Bᴏᴛꜱ:"
     for each_bot in bot_admin_list:
         text += "\n<code> • </code>{}".format(each_bot)
 
@@ -637,28 +637,43 @@ def adminlist(update, context):
 
 
 __help__ = """
- ❍ /admins*:* list of admins in the chat
+ ✮ /admins *:* TITAN BOT will generate the list of admins in the chat
 
 *Admins only:*
- ❍ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
- ❍ /unpin*:* unpins the currently pinned message
- ❍ /invitelink*:* gets invitelink
- ❍ /promote*:* promotes the user
- ❍ /demote*:* demotes the user
- ❍ /title <title here>*:* sets a custom title for an admin that the bot promoted
- ❍ /setgtitle <newtitle>*:* Sets new chat title in your group.
- ❍ /setgpic*:* As a reply to file or photo to set group profile pic!
- ❍ /delgpic*:* Same as above but to remove group profile pic.
- ❍ /setsticker*:* As a reply to some sticker to set it as group sticker set!
- ❍ /setdescription <description>*:* Sets new chat description in group.
- ❍ /admincache*:* force refresh the admins list
- ❍ /antispam <on/off/yes/no>*:* Will toggle our antispam tech or return your current settings.
- ❍ /del*:* deletes the message you replied to
- ❍ /purge*:* deletes all messages between this and the replied to message.
- ❍ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
+ ✮ /pin *:* silently pins the message replied | add `'loud'` or `'notify'` to give notifs to users
 
-*Note:* Night Mode chats get Automatically closed at 12 am(IST)
-and Automatically openned at 6 am(IST) To Prevent Night Spams.
+ ✮ /unpin *:* unpins the currently pinned message
+
+ ✮ /invitelink *:* gets invitelink of the chat
+
+ ✮ /promote *:* promotes the user in the chat
+
+ ✮ /demote *:* demotes the user in the chat
+
+ ✮ /title `<title here>` *:* sets a custom title for an admin that the bot promoted in the chat
+
+ ✮ /setgtitle <newtitle> *:* Sets new chat title in your group.
+
+ ✮ /setgpic *:* As a reply to video or photo to set group profile pic!
+
+ ✮ /delgpic *:* Same as above but to remove group profile pic.
+
+ ✮ /setsticker *:* As a reply to some sticker to set it as group sticker set!
+
+ ✮ /setdescription `<description>` *:* Sets new chat description in group.
+
+ ✮ /admincache *:* force refresh the admins list
+
+ ✮ /antispam `<on|off|yes|no>` *:* Will toggle our antispam tech or return your current settings.
+
+ ✮ /del *:* deletes the message you replied to
+
+ ✮ /purge *:* deletes all messages between this and the replied to message.
+
+ ✮ /purge `<integer X>` *:* deletes the replied message, and the X number of messages following it if replied to a message.
+
+*Note:* `Night Mode chats get Automatically closed at 12 am(IST)
+and Automatically openned at 6 am(IST) To Prevent Night Spams.`
 
 ⚠️ `Read from top`
 """
@@ -705,7 +720,7 @@ dispatcher.add_handler(SETCHAT_TITLE_HANDLER)
 dispatcher.add_handler(SETSTICKET_HANDLER)
 dispatcher.add_handler(SETDESC_HANDLER)
 
-__mod_name__ = "Admin"
+__mod_name__ = "Aᴅᴍɪɴꜱ🚨"
 __command_list__ = [
     "adminlist",
     "admins",
