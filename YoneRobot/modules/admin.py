@@ -588,7 +588,6 @@ def adminlist(update, context):
     for admin in administrators:
         user = admin.user
         status = admin.status
-        custom_title = admin.custom_title
 
         if user.first_name == "":
             name = "☠ Deleted Account"
