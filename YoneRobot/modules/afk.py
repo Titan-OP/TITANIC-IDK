@@ -136,12 +136,12 @@ def check_afk(update, context, user_id, fst_name, userc_id):
             return
         if not user.reason:
             res = "{} is afk".format(fst_name)
-            update.effective_message.reply_text(res)
+            update.effective_message.reply_animation(AFK_REASON_VID, caption=chosen_msg.format(fname))
         else:
             res = "{} is afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
-            update.effective_message.reply_text(res, parse_mode="html")
+            update.effective_message.reply_animation(AFK_REASON_VID, caption=chosen_msg.format(fname))
 
 
 
