@@ -44,6 +44,7 @@ def afk(update: Update, context: CallbackContext):
         afk = [
                 "{} is now AFK!",
                 "bye bye, {}!",
+                "{} is now away!",
         ]
         chosen_msg = random.choice(afk)
         update.effective_message.reply_animation(AFK_VID, caption=chosen_msg.format(fname))
@@ -68,7 +69,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
             options = [
                 "{} is back!",
                 "welcome back {}!",
-                "yo, {} is here!",
+                "Yo, {} is here!",
                 "{} is online!",
                 "{} is finally here!",
                 "Welcome back! {}",
@@ -136,12 +137,12 @@ def check_afk(update, context, user_id, fst_name, userc_id):
             return
         if not user.reason:
             res = "{} is afk".format(fst_name)
-            update.effective_message.reply_animation(AFK_REASON_VID, parse_mode="html")
+            update.effective_message.reply_animation(AFK_REASON_VID, html.escape(user.reason))
         else:
             res = "{} is afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
-            update.effective_message.reply_animation(AFK_REASON_VID, parse_mode="html")
+            update.effective_message.reply_animation(AFK_REASON_VID, html.escape(user.reason))
 
 
 
