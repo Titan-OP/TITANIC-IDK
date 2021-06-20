@@ -89,7 +89,5 @@ file_helpo = file_help.replace("_", " ")
 
 __help__ = """
  ✮ /logo `<text>` **:**  TITAN BOT will Create your logo with your name given.
-
- ✮ /logo `<text> (reply to a image)` **:** TITAN BOT will create your logo with your logo name one the image given.
  """
 __mod_name__ = "Lᴏɢᴏ🖼️"
