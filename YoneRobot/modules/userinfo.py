@@ -287,7 +287,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nHe has the highest rank 'kinoe'."
+        text += "\n\nHe has the highest rank 'KINOE'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\nHis rank is 'KINOTO'\nThis user is member of [This](https://t.me/TITAN_UPDATES)."
