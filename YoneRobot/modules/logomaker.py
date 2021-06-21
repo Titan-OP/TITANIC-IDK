@@ -5,11 +5,11 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 fonts = (
-  "./YoneRobot/resources/Night Machine.otf".
-  "./YoneRobot/resources/lethal-injector hollow2.otf"
-  "./YoneRobot/resources/Deadly Advance.otf"
-  "./YoneRobot/resources/Vampire Wars.otf"
-  "./YoneRobot/resources/Chopsic.otf"
+  "./YoneRobot/resources/Night Machine.otf",
+  "./YoneRobot/resources/lethal-injector hollow2.otf",
+  "./YoneRobot/resources/Deadly Advance.otf",
+  "./YoneRobot/resources/Vampire Wars.otf",
+  "./YoneRobot/resources/Chopsic.otf",
 )
 chosen_font = random.choice(fonts)
 
