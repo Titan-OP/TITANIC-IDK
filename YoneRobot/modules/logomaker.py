@@ -34,7 +34,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./YoneRobot/resources/chosen_font", 330)
+    font = ImageFont.truetype("chosen_font", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
