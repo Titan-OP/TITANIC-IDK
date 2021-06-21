@@ -26,7 +26,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./YoneRobot/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./YoneRobot/resources/Deadly Advance.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
