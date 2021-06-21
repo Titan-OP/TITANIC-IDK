@@ -402,20 +402,26 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
 
-*Blue text cleaner* removed any made up commands that people send in your chat.
- ❍ /cleanblue <on/off/yes/no>*:* clean commands after sending
- ❍ /ignoreblue <word>*:* prevent auto cleaning of the command
- ❍ /unignoreblue <word>*:* remove prevent auto cleaning of the command
- ❍ /listblue*:* list currently whitelisted commands
+*Blue text cleaner* removes any made up commands that people send in your chat.
+ ✮ /cleanblue <on/off/yes/no>*:* clean commands after sending
+
+ ✮ /ignoreblue <word>*:* prevent auto cleaning of the command
+
+ ✮ /unignoreblue <word>*:* remove prevent auto cleaning of the command
+
+ ✮ /listblue*:* list currently whitelisted commands
 
 *Antiflood* allows you to take action on users that send more than x messages in a row. Exceeding the set flood \
 will result in restricting that user.
  This will mute users if they send more than 10 messages in a row, bots are ignored.
- ❍ /flood*:* Get the current flood control setting
+ ✮ /flood*:* Get the current flood control setting
+
 • *Admins only:*
- ❍ /setflood <int/'no'/'off'>*:* enables or disables flood control
+ ✮ /setflood <int/'no'/'off'>*:* enables or disables flood control
  *Example:* `/setflood 10`
- ❍ /setfloodmode <ban/kick/mute/tban/tmute> <value>*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
+
+ ✮ /setfloodmode <ban/kick/mute/tban/tmute> <value>*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
+
 • *Note:*
  • Value must be filled for tban and tmute!!
  It can be:
@@ -425,7 +431,7 @@ will result in restricting that user.
  `1w` = 1 week
  """
 
-__mod_name__ = "Control"
+__mod_name__ = "Cᴏɴᴛʀᴏʟꜱ🛂"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.group, check_flood
