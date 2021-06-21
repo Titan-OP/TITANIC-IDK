@@ -105,7 +105,7 @@ async def nsfw_watch(event):
                 return
             add_nsfwatch(str(event.chat_id))
             await event.reply(
-                f"**α∂∂є∂ ¢нαт {event.chat.title} ωιтн ɪᴅ  {event.chat_id} тσ ∂αтαвαѕє. тнιѕ gяσυρѕ ɴꜱꜰᴡ cσηтєηтѕ ωιℓℓ вє ∂єℓєтє∂**"
+                f"**Added Chat {event.chat.title} With Id {event.chat_id} To Database. This Groups Nsfw Contents Will Be Deleted**"
             )
         elif (
             input_str == "off"
@@ -114,18 +114,18 @@ async def nsfw_watch(event):
             or input_str == "disable"
         ):
             if not is_nsfwatch_indb(str(event.chat_id)):
-                await event.reply("тнιѕ cнαт нαѕ ησт єηαвℓє∂ ɴꜱꜰᴡ Watch.")
+                await event.reply("This Chat Has Not Enabled Nsfw Watch.")
                 return
             rmnsfwatch(str(event.chat_id))
             await event.reply(
-                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Nsfw ωαтcн**"
+                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Nsfw Watch**"
             )
         else:
             await event.reply(
-                "ι υη∂єѕтαη∂ `/nsfwguardian on` αη∂ `/nsfwguardian off` σηℓу"
+                "I undestand `/nsfwguardian on` and `/nsfwguardian off` only"
             )
     else:
-        await event.reply("`уσυ ѕнσυℓ∂ вє α∂мιη тσ ∂σ тнιѕ!`")
+        await event.reply("`You Should Be Admin To Do This!`")
         return
 
 
@@ -148,7 +148,7 @@ async def ws(event):
         await event.delete()
         st = sender.first_name
         hh = sender.id
-        final = f"**Nꜱꜰᴡ Dᴇᴛᴇᴄᴛᴇᴅ**\n\n{st}](tg://user?id={hh}) уσυя мєѕѕαgє cσηтαιη ɴꜱꜰᴡ cσηтєηт.. ѕσ, 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 ∂єℓєтє∂ тнє мєѕѕαgє\n\n **ɴꜱꜰᴡ ꜱᴇɴᴅᴇʀ - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴅᴇᴛᴇᴄᴛɪᴏɴꜱ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐓𝐈𝐓𝐀𝐍 𝐀𝐈` \n**#GROUP_GUARDIAN** "
+        final = f"**NSFW DETECTED**\n\n{st}](tg://user?id={hh}) your message contain NSFW content.. So, Yone deleted the message\n\n **Nsfw Sender - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️Automatic Detections Powered By YoneAI` \n**#GROUP_GUARDIAN** "
         dev = await event.respond(final)
         await asyncio.sleep(10)
         await dev.delete()
@@ -210,7 +210,7 @@ async def nsfw_watch(client, message):
             Escobar = midhun.id
         await client.send_message(
             message.chat.id,
-            f"**NSFW DETECTED**\n\n{hehe}'s message contain NSFW content.. So, Nezuko deleted the message\n\n **Nsfw Sender - User / Bot :** `{Escobar}` \n**Chat Title:** `{ctitle}` \n\n`⚔️Automatic Detections Powered By NezukoAI` \n**#GROUP_GUARDIAN** ",
+            f"**NSFW DETECTED**\n\n{hehe}'s message contain NSFW content.. So, Yone deleted the message\n\n **Nsfw Sender - User / Bot :** `{Escobar}` \n**Chat Title:** `{ctitle}` \n\n`⚔️Automatic Detections Powered By YoneAI` \n**#GROUP_GUARDIAN** ",
         )
         message.continue_propagation()
 """
@@ -367,7 +367,7 @@ async def del_profanity(event):
                     await event.delete()
                     st = sender.first_name
                     hh = sender.id
-                    final = f"**NSFW DETECTED**\n\n{st}](tg://user?id={hh}) your message contain NSFW content.. So, Nezuko deleted the message\n\n **Nsfw Sender - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️Automatic Detections Powered By NezukoAI` \n**#GROUP_GUARDIAN** "
+                    final = f"**NSFW DETECTED**\n\n{st}](tg://user?id={hh}) your message contain NSFW content.. So, Yone deleted the message\n\n **Nsfw Sender - User / Bot :** {st}](tg://user?id={hh})  \n\n`⚔️Automatic Detections Powered By YoneAI` \n**#GROUP_GUARDIAN** "
                     dev = await event.respond(final)
                     await asyncio.sleep(10)
                     await dev.delete()
@@ -429,16 +429,16 @@ async def del_profanity(event):
 #
 
 __help__ = """
-**Group Guardian:**
+ 
+*Group Guardian:*
 𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎 cαη ρяσтєcт уσυя gяσυρ ƒяσм ɴꜱꜰᴡ ѕєη∂єяѕ, ѕℓαg ωσя∂ υѕєяѕ αη∂ αℓѕσ cαη ƒσя¢є мємвєяѕ тσ υѕє єηgℓιѕн
 
-**Commmands**
+*Commmands*
+ ✮ /gshield `on/off` - Enable|Disable Porn cleaning
 
- ✮ /gshield __on|off__ - єηαвℓє|∂ιѕαвℓє ρσяη cℓєαηιηg
+ ✮ /globalmode `on/off` - Enable|Disable English only mode
 
- ✮ /globalmode __on|off__ - єηαвℓє|∂ιѕαвℓє єηgℓιѕн σηℓу мσ∂є
-
- ✮ /profanity __on|off__ - єηαвℓє|∂ιѕαвℓє ѕℓαηg ωσя∂ cℓєαηιηg
+ ✮ /profanity `on/off` - Enable|Disable slag word cleaning
  
 `Note: ꜱᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛꜱ ɢᴏᴇꜱ ᴛᴏ ᴊᴜʟɪᴀ ᴘʀᴏᴊᴇᴄᴛ ᴀɴᴅ ꜰʀɪᴅᴀʏ ᴜꜱᴇʀʙᴏᴛ`
  
