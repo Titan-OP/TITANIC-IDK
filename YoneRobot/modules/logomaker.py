@@ -5,7 +5,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 
-@tbot.on(events.NewMessage(pattern="^/logo ?(.*)"))
+@register(pattern="^/logo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -45,7 +45,7 @@ async def lego(event):
 
 
    
-@tbot.on(events.NewMessage(pattern="^/ptxt ?(.*)"))
+@register(pattern="^/ptxt ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
