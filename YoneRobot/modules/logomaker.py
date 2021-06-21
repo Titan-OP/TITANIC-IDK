@@ -24,7 +24,7 @@ async def lego(event):
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
-    fillcolor = "gold"
+    fillcolor = "white"
     shadowcolor = "blue"
     font = ImageFont.truetype("./YoneRobot/resources/lethal-injector hollow2.otf", 330)
     w, h = draw.textsize(text, font=font)
