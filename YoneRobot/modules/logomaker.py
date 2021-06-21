@@ -20,13 +20,13 @@ async def lego(event):
  await event.reply('cяєαтιηg уσυя ℓσgσ...ωαιт!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./YoneRobot/resources/Night Machine.otf')
+    img = Image.open('./YoneRobot/resources/20210621_141943.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./YoneRobot/resources/lethal-injector hollow2.otf", 330)
+    font = ImageFont.truetype("./YoneRobot/resources/Night Machine.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
