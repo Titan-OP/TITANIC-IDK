@@ -410,6 +410,7 @@ __help__ = """
  ✮ /unignoreblue <word>*:* remove prevent auto cleaning of the command
 
  ✮ /listblue*:* list currently whitelisted commands
+"""
 
 __mod_name__ = "Cᴏɴᴛʀᴏʟꜱ🛂"
 
