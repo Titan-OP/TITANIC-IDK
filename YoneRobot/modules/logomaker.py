@@ -4,13 +4,13 @@ from YoneRobot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
-fonts = [
-  "./YoneRobot/resources/Night Machine.otf"
-  "./YoneRobot/resources/lethal-injector hollow2.otf"
-  "./YoneRobot/resources/Deadly Advance.otf"
-  "./YoneRobot/resources/Vampire Wars.otf"
-  "./YoneRobot/resources/Chopsic.otf"
-]
+fonts = [                                             # |
+  "./YoneRobot/resources/Night Machine.otf".          # |
+  "./YoneRobot/resources/lethal-injector hollow2.otf" # |
+  "./YoneRobot/resources/Deadly Advance.otf"          # |------> Just for Help.🙄🙃🤫
+  "./YoneRobot/resources/Vampire Wars.otf"            # |
+  "./YoneRobot/resources/Chopsic.otf"                 # |
+]                                                     # | 
 
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
