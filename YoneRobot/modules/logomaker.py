@@ -4,7 +4,6 @@ from YoneRobot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
-    try:
         fonts = [
           "./YoneRobot/resources/Night Machine.otf"
           "./YoneRobot/resources/lethal-injector hollow2.otf"
