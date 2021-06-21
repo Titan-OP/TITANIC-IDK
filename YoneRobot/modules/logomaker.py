@@ -20,7 +20,7 @@ async def lego(event):
  await event.reply('cяєαтιηg уσυя ℓσgσ...ωαιт!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./YoneRobot/resources/IMG_20210621_135950.jpg')
+    img = Image.open('./YoneRobot/resources/20210621_141943.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
