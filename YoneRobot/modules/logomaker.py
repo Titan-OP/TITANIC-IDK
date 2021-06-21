@@ -23,10 +23,10 @@ async def lego(event):
     img = Image.open('./YoneRobot/resources/IMG_20210621_135950.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 900
+    pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./YoneRobot/resources/lethal-injector hollow2.otf", 400)
+    font = ImageFont.truetype("./YoneRobot/resources/lethal-injector hollow2.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
