@@ -4,14 +4,8 @@ from YoneRobot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
-fonts = (
-  "./YoneRobot/resources/Night Machine.otf",
-  "./YoneRobot/resources/lethal-injector hollow2.otf",
-  "./YoneRobot/resources/Deadly Advance.otf",
-  "./YoneRobot/resources/Vampire Wars.otf",
-  "./YoneRobot/resources/Chopsic.otf",
-)
-chosen_font = (fonts)
+
+
 
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
@@ -34,7 +28,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("/YoneRobot/resources/lethal-injector hollow2.otf", 400)
+    font = ImageFont.truetype("./YoneRobot/resources/lethal-injector hollow2.otf", 400)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
