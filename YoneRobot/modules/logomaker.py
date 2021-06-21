@@ -11,7 +11,7 @@ fonts = [
   "./YoneRobot/resources/Vampire Wars.otf"
   "./YoneRobot/resources/Chopsic.otf"
 ]
-chosen_font = choice(fonts)
+chosen_font = (fonts)
 
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
