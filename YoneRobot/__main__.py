@@ -548,7 +548,7 @@ def settings_button(update: Update, context: CallbackContext):
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
                 text="нι тнєяє! тнєяє αяє qυιтє α ƒєω ѕєттιηgѕ ƒσя {} - gσ αнєα∂ αη∂ ριcк ωнαт "
-                "уσυ'яє ιηтєяєѕтє∂ ιη."".format(escape_markdown(chat.title)),
+                "уσυ'яє ιηтєяєѕтє∂ ιη.".format(escape_markdown(chat.title)),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, CHAT_SETTINGS, "stngs", chat=chat_id)
