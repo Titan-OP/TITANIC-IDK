@@ -20,7 +20,7 @@ def speedtestxyz(update: Update, context: CallbackContext):
         ]
     ]
     update.effective_message.reply_text(
-        "💠 **Select SpeedTest Mode** 💠", reply_markup=InlineKeyboardMarkup(buttons)
+        "➭ **Select SpeedTest Mode**", parse_mode="markdown", reply_markup=InlineKeyboardMarkup(buttons)
     )
 
 
