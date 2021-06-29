@@ -144,7 +144,7 @@ def gban(update: Update, context: CallbackContext):
 
         if not reason:
             message.reply_text(
-                "This user is already gbanned; I'd change the reason, but you haven't given me a new reason"
+                "*This user is already gbanned* \n`I'd change the reason, but you haven't given me a new reason`", parse_mode="markdown"
             )
             return
 
@@ -153,17 +153,17 @@ def gban(update: Update, context: CallbackContext):
         )
         if old_reason:
             message.reply_text(
-                "This user is already gbanned, for the following reason:\n"
-                "<code>{}</code>\n"
-                "I've gone and updated it with your new reason!".format(
+                "*This user is already gbanned*\n"
+                "*REASON* *:* `{}`\n\n"
+                "*I've updated it with your new reason!*".format(
                     html.escape(old_reason)
                 ),
-                parse_mode=ParseMode.HTML,
+                parse_mode="markdown",
             )
 
         else:
             message.reply_text(
-                "This user is already gbanned, but had no reason set; I've gone and updated it!"
+                "*This user is already gbanned, but had no reason set* \n*I've gone and updated it!*", parse_mode="markdown"
             )
 
         return
