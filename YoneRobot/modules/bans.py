@@ -66,7 +66,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         if user_id == OWNER_ID:
             message.reply_text("Trying to put me against a God level disaster huh?")
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our own.")
+            message.reply_text("I can't act against my DEVs.")
         elif user_id in DRAGONS:
             message.reply_text(
                 "Fighting this Dragon here will put civilian lives at risk."
@@ -235,7 +235,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
 @user_admin
 @user_can_ban
 @loggable
-def punch(update: Update, context: CallbackContext) -> str:
+def kick(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
     message = update.effective_message
@@ -291,7 +291,7 @@ def punch(update: Update, context: CallbackContext) -> str:
 @run_async
 @bot_admin
 @can_restrict
-def punchme(update: Update, context: CallbackContext):
+def kickme(update: Update, context: CallbackContext):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
         update.effective_message.reply_text("I wish I could... but you're an admin.")
@@ -399,41 +399,50 @@ def selfunban(context: CallbackContext, update: Update) -> str:
 
 
 __help__ = """
- ❍ /punchme*:* punchs the user who issued the command
+ ✮ /kickme *:* kicks the user out of the group who used the command.
+          *💡Note:* `only works on Non-Admins.`
 
 *Admins only:*
- ❍ /ban <userhandle>*:* bans a user. (via handle, or reply)
- ❍ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
- ❍ /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
- ❍ /unban <userhandle>*:* unbans a user. (via handle, or reply)
- ❍ /punch <userhandle>*:* Punches a user out of the group, (via handle, or reply)
+ ✮ /ban <userhandle> *:* bans a user. (via handle, or reply)
+
+ ✮ /sban <userhandle> *:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+
+ ✮ /tban <userhandle> x(m/h/d) *:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+        *💡Example:* `/tban {username} 10m, bans the person for 10 minutes.`
+
+ ✮ /unban <userhandle> *:* unbans a user. (via handle, or reply)
+
+ ✮ /kick <userhandle> *:* Kicks a user out of the group, (via handle, or reply)
 
  *Admins only:*
- ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
- ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
- ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+ ✮ /mute <userhandle> *:* silences a user. Can also be used as a reply, muting the replied to user.
+
+ ✮ /tmute <userhandle> x(m/h/d) *:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+         *💡Example:* `/tmute {username} 2h, mutes the person for 2 hours.`
+
+ ✮ /unmute <userhandle> *:* Unmutes a user. Can also be used as a reply, muting the replied to user.
 """
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban)
-PUNCH_HANDLER = CommandHandler("punch", punch)
+KICK_HANDLER = CommandHandler("kick", kick)
 UNBAN_HANDLER = CommandHandler("unban", unban)
 ROAR_HANDLER = CommandHandler("roar", selfunban)
-PUNCHME_HANDLER = DisableAbleCommandHandler("punchme", punchme, filters=Filters.group)
+KICKME_HANDLER = DisableAbleCommandHandler("kickme", kickme, filters=Filters.group)
 
 dispatcher.add_handler(BAN_HANDLER)
 dispatcher.add_handler(TEMPBAN_HANDLER)
-dispatcher.add_handler(PUNCH_HANDLER)
+dispatcher.add_handler(KICK_HANDLER)
 dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
-dispatcher.add_handler(PUNCHME_HANDLER)
+dispatcher.add_handler(KICKME_HANDLER)
 
-__mod_name__ = "Ban/Mute"
+__mod_name__ = "Bᴀɴ|Mᴜᴛᴇ🛎"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,
-    PUNCH_HANDLER,
+    KICK_HANDLER,
     UNBAN_HANDLER,
     ROAR_HANDLER,
-    PUNCHME_HANDLER,
+    KICKME_HANDLER,
 ]
