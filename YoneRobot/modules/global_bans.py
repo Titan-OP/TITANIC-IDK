@@ -123,7 +123,7 @@ def gban(update: Update, context: CallbackContext):
         message.reply_text("Fool! You can't attack Telegram's native tech!")
         return
 
-if user_id in [1097093376]:
+    if user_id in [1097093376]:
         message.reply_text("Lol! You think I am gonna ban my Owner.\nFool!🤣 ")
         return
 
