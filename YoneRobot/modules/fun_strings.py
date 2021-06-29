@@ -423,8 +423,8 @@ EARS = [
 ]
 
 TOSS = (
-    "<b>You Flipped The coin and its an</b>\n\n<b>Heads</b>💰",
-    "<b>You Flipped The coin and its an</b>\n\n<b>Tails</b>💰",
+    "You Flipped The coin and its an\n\nHeads💰",
+    "You Flipped The coin and its an\n\nTails💰",
 )
 
 EIGHTBALL = [
