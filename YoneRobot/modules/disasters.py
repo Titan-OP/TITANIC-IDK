@@ -41,8 +41,8 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 
 
 # This can serve as a deeplink example.
- disasters =
- """ Text here """
+# disasters =
+# """ Text here """
 
  do not async, not a handler
  def send_disasters(update):
