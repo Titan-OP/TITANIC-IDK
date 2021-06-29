@@ -168,7 +168,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("**O Yeah...New Person**\n**Wait sar lemme Gban this nibba.**\n\n**Status:Gbannig....**")
+    message.reply_text("*Owow! New Person....*\n*Wait sar lemme Gban this nibba.*\n\n*Status*:`Gbannig....`", parse_mode="markdown")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -261,9 +261,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("**Done! Gbanned this nibba, with no expiration date.**", parse_mode="markdown")
+        message.reply_text("*Done! Gbanned {user_chat.first_name} , with no expiration date.*", parse_mode="markdown")
     else:
-        message.reply_text("**Done! Gbanned this nibba, with no expiration date.**", parse_mode="markdown")
+        message.reply_text("*Done! Gbanned {user_chat.first_name} , with no expiration date.*", parse_mode="markdown")
 
     try:
         bot.send_message(
@@ -304,7 +304,7 @@ def ungban(update: Update, context: CallbackContext):
         message.reply_text("This user is not gbanned!")
         return
 
-    message.reply_text(f"**Okay...! I'll give** {user_chat.first_name} **a second chance, Globally.**")
+    message.reply_text(f"*Okay...! I'll give* {user_chat.first_name} *a second chance, Globally.*", parse_mode="markdown")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -386,9 +386,9 @@ def ungban(update: Update, context: CallbackContext):
 
     if ungban_time > 60:
         ungban_time = round((ungban_time / 60), 2)
-        message.reply_text(f"**Party Time...! Person has been un-gbanned.** \n**Took {ungban_time} min**")
+        message.reply_text(f"*Party Time...! Person has been un-gbanned.* \n*Took {ungban_time} min*", parse_mode="markdown")
     else:
-        message.reply_text(f"**Party Time...! Person has been un-gbanned.** \n**Took {ungban_time} sec**")
+        message.reply_text(f"*Party Time...! Person has been un-gbanned.* \n*Took {ungban_time} sec*", parse_mode="markdown")
 
 
 @run_async
