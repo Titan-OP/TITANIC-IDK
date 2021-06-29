@@ -337,10 +337,10 @@ if is_module_loaded(FILENAME):
     dispatcher.add_handler(COMMANDS_HANDLER)
     dispatcher.add_handler(TOGGLE_HANDLER)
 
-__help__ = """
-  ✮ /dcmds *:* check the current status of disabled commands
+    __help__ = """
+    ✮ /dcmds *:* check the current status of disabled commands
 
-*Admins only:*
+    *Admins only:*
   ✮ /enable <cmd name> *:* enable that command
 
   ✮ /disable <cmd name> *:* disable that command
