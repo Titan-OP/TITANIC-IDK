@@ -574,13 +574,13 @@ def adminlist(update, context):
         # if user.username:
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 👑 Cʀᴇᴀᴛᴏʀ:"
+            text += "\n 👑 Creator:"
             text += "\n<code> • </code>{}\n".format(name)
 
             if custom_title:
                 text += f"<code> ┗━ {html.escape(custom_title)}</code>\n"
 
-    text += "\n🔱 Aᴅᴍɪɴꜱ:"
+    text += "\n🔱 Admins:"
 
     custom_admin_list = {}
     normal_admin_list = []
@@ -588,6 +588,7 @@ def adminlist(update, context):
     for admin in administrators:
         user = admin.user
         status = admin.status
+        custom_title = admin.custom_title
 
         if user.first_name == "":
             name = "☠ Deleted Account"
@@ -625,8 +626,7 @@ def adminlist(update, context):
             text += "\n<code> • </code>{}".format(admin)
         text += "\n"
 
-
-    text += "\n🤖 Bᴏᴛꜱ:"
+    text += "\n🤖 Bots:"
     for each_bot in bot_admin_list:
         text += "\n<code> • </code>{}".format(each_bot)
 
@@ -637,7 +637,7 @@ def adminlist(update, context):
 
 
 __help__ = """
- ✮ /admins *:* TITAN BOT will generate the list of admins in the chat
+ ✮ /adminlist *:* TITAN BOT will generate the list of admins in the chat
 
 *Admins only:*
  ✮ /pin *:* silently pins the message replied | add `'loud'` or `'notify'` to give notifs to users
@@ -678,7 +678,7 @@ and Automatically openned at 6 am(IST) To Prevent Night Spams.`
 ⚠️ `Read from top`
 """
 
-ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
+ADMINLIST_HANDLER = DisableAbleCommandHandler("adminlist", adminlist)
 
 PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.group)
 UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.group)
