@@ -461,6 +461,6 @@ TABLE = (
     "┻━┻︵└(՞▽՞ └)",
     "(ノಥ,_｣ಥ)ノ彡┻━┻",
     "(┛✧Д✧))┛彡┻━┻",
-    "Send money for buying new table to flip.🙄",
+    "Sed,I don't have more tables\nSend money for buying new table to flip.🙄",
     "Go and do some work instead of flipping tables.😂",
 )
