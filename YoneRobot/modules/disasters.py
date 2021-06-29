@@ -41,13 +41,13 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 
 
 # This can serve as a deeplink example.
-# disasters =
-# """ Text here """
+ disasters =
+ """ Text here """
 
-# do not async, not a handler
-# def send_disasters(update):
-#    update.effective_message.reply_text(
-#        disasters, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+ do not async, not a handler
+ def send_disasters(update):
+    update.effective_message.reply_text(
+        disasters, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 ### Deep link example ends
 
