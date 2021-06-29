@@ -550,7 +550,7 @@ def devlist(update: Update, context: CallbackContext):
     m.edit_text(reply, parse_mode=ParseMode.HTML)
 
 
-__help__ = f"""
+__help__ ="""
  *⚠️ Notice:*
  *ONLY FOR Disaster Level Users*
  Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
