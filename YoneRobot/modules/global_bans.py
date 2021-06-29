@@ -168,7 +168,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("*Owow! New Person....*\n*Wait sar lemme Gban this nibba.*\n\n*Status*:`Gbannig....`", parse_mode="markdown")
+    message.reply_text("*Owow! New Person....*\n*Wait sar lemme Gban this nibba.*\n\n*Status* *:* `Gbannig....`", parse_mode="markdown")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -261,9 +261,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("*Done! Gbanned {user_chat.first_name} , with no expiration date.*", parse_mode="markdown")
+        message.reply_text("*Done! Gbanned this Nibba , with no expiration date.*", parse_mode="markdown")
     else:
-        message.reply_text("*Done! Gbanned {user_chat.first_name} , with no expiration date.*", parse_mode="markdown")
+        message.reply_text("*Done! Gbanned this Nibba , with no expiration date.*", parse_mode="markdown")
 
     try:
         bot.send_message(
@@ -304,7 +304,7 @@ def ungban(update: Update, context: CallbackContext):
         message.reply_text("This user is not gbanned!")
         return
 
-    message.reply_text(f"*Okay...! I'll give* {user_chat.first_name} *a second chance, Globally.*", parse_mode="markdown")
+    message.reply_text(f"*Okay...! I'll give* {user_chat.first_name} *a second chance, Globally.*\n*Status* *:* `Un-Gbanning`", parse_mode="markdown")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
