@@ -263,7 +263,7 @@ def gban(update: Update, context: CallbackContext):
         gban_time = round((gban_time / 60), 2)
         message.reply_text("**Done! Gbanned this nibba, with no expiration date.**", parse_mode="markdown")
     else:
-        message.reply_text("**Done! Gbanned this nibba, with no expiration date.**", parse_mode=""markdown")
+        message.reply_text("**Done! Gbanned this nibba, with no expiration date.**", parse_mode="markdown")
 
     try:
         bot.send_message(
