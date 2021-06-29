@@ -91,7 +91,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against our own."
+            "That user is part of the Association\nI can't act against Disaster Members."
         )
         return
 
@@ -123,6 +123,10 @@ def gban(update: Update, context: CallbackContext):
         message.reply_text("Fool! You can't attack Telegram's native tech!")
         return
 
+if user_id in [1097093376]:
+        message.reply_text("Lol! You think I am gonna ban my Owner.\nFool!🤣 ")
+        return
+
     try:
         user_chat = bot.get_chat(user_id)
     except BadRequest as excp:
@@ -140,7 +144,7 @@ def gban(update: Update, context: CallbackContext):
 
         if not reason:
             message.reply_text(
-                "This user is already gbanned; I'd change the reason, but you haven't given me one..."
+                "This user is already gbanned; I'd change the reason, but you haven't given me a new reason"
             )
             return
 
@@ -164,7 +168,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("On it!")
+    message.reply_text("O Yeah...New Person\nWait sar lemme Gban {mention_html(user_chat.id, user_chat.first_name)}.\Gbannig....")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -257,9 +261,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("Done! Gbanned this [nibba]{mention_html(user_chat.id, user_chat.first_name)} .", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("Done! Gbanned this [nibba]{mention_html(user_chat.id, user_chat.first_name)} .", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
@@ -300,7 +304,7 @@ def ungban(update: Update, context: CallbackContext):
         message.reply_text("This user is not gbanned!")
         return
 
-    message.reply_text(f"I'll give {user_chat.first_name} a second chance, globally.")
+    message.reply_text(f"Okay...! I'll give {user_chat.first_name} a second chance, Globally.")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -382,9 +386,9 @@ def ungban(update: Update, context: CallbackContext):
 
     if ungban_time > 60:
         ungban_time = round((ungban_time / 60), 2)
-        message.reply_text(f"Person has been un-gbanned. Took {ungban_time} min")
+        message.reply_text(f"Party Time...! Person has been un-gbanned. Took {ungban_time} min")
     else:
-        message.reply_text(f"Person has been un-gbanned. Took {ungban_time} sec")
+        message.reply_text(f"Party Time...! Person has been un-gbanned. Took {ungban_time} sec")
 
 
 @run_async
@@ -405,11 +409,11 @@ def gbanlist(update: Update, context: CallbackContext):
             banfile += f"Reason: {user['reason']}\n"
 
     with BytesIO(str.encode(banfile)) as output:
-        output.name = "gbanlist.txt"
+        output.name = "TITAN-2.0-gbanlist.txt"
         update.effective_message.reply_document(
             document=output,
-            filename="gbanlist.txt",
-            caption="Here is the list of currently gbanned users.",
+            filename="TITAN-2.0-gbanlist.txt",
+            caption="Here is the list of currently Gbanned users.",
         )
 
 
@@ -426,7 +430,7 @@ def check_and_ban(update, user_id, should_message=True):
         if should_message:
             update.effective_message.reply_text(
                 f"<b>Alert</b>: this user is globally banned.\n"
-                f"<code>*bans them from here*</code>.\n"
+                f"<code>*Bans them from here*</code>.\n"
                 f"<b>Appeal chat</b>: {SPAMWATCH_SUPPORT_CHAT}\n"
                 f"<b>User ID</b>: <code>{sw_ban.id}</code>\n"
                 f"<b>Ban Reason</b>: <code>{html.escape(sw_ban.reason)}</code>",
@@ -439,7 +443,7 @@ def check_and_ban(update, user_id, should_message=True):
         if should_message:
             text = (
                 f"<b>Alert</b>: this user is globally banned.\n"
-                f"<code>*bans them from here*</code>.\n"
+                f"<code>*Bans them from here*</code>.\n"
                 f"<b>Appeal chat</b>: @{SUPPORT_CHAT}\n"
                 f"<b>User ID</b>: <code>{user_id}</code>"
             )
