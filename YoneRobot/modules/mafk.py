@@ -13,7 +13,7 @@ from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
 
 AFK_VID = "https://telegra.ph/file/c1151e4efbb0baf8eff51.mp4"
 USER_BACK = "https://telegra.ph/file/7a05f54e91f895aac0487.mp4"
-AFK_REASON_VID = "CgACAgQAAx0CTyCW5QACED5gz3H8r7-Y70BKE3gU4OrIZbivHAACTgIAAoFDlFIodCCDHpcI3x8E"
+AFK_REASON_VID = "CgACAgQAAx0CVTtJdwABBjt4YNv3F7bmbzNIFgFccx7ZDhrwVScAAiECAAK6E61Rt4B92ymItZ0gBA"
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 chosen_vid = random.choice(AFK_REASON_VID)
