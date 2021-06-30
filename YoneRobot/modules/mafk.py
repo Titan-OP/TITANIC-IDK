@@ -142,7 +142,7 @@ def check_mafk(update, context, user_id, fst_name, userc_id):
             res = "{} is afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
-            update.effective_message.reply_animation(AFK_REASON_VID, caption=res, parse_mode="html")
+            update.effective_message.reply_animation(MAFK_REASON_VID, caption=res, parse_mode="html")
 
 
 
