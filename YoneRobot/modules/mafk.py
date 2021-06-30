@@ -12,7 +12,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
 
 MAFK_VID = "https://telegra.ph/file/c1151e4efbb0baf8eff51.mp4"
-USER_BACK = "https://telegra.ph/file/7a05f54e91f895aac0487.mp4"
+USER_BACK = "CgACAgUAAx0CTyCW5QACGHtg3BDBKXrz6BxbUG9sAS7RA7XvQgAC6wIAAgrW8FehET_w3JxsUSAE"
 MAFK_REASON_VID = "CgACAgQAAx0CVTtJdwABBjt4YNv3F7bmbzNIFgFccx7ZDhrwVScAAiECAAK6E61Rt4B92ymItZ0gBA"
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
