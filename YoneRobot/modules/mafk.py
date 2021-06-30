@@ -146,6 +146,18 @@ def check_mafk(update, context, user_id, fst_name, userc_id):
 
 
 
+__help__ = """
+
+*THIS COMMANDS ARE USED WHEN YOU WANT TO GO AFK (AWAY FROM KEYBOARD).*
+
+✮ /afk or brb *:* Normal AFK function.
+
+✮ /mafk *:* Media AFK, Use it and get to know more ;)
+
+For any Type of Queries Join @TITANX_CHAT
+"""
+
+
 AFK_HANDLER = DisableAbleCommandHandler("mafk", mafk)
 AFK_REGEX_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"^(?i)brb(.*)$"), mafk, friendly="mafk"
@@ -159,21 +171,9 @@ dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
 __mod_name__ = "AFK🏃"
-
-__help__ = """
-*Commmands*
-THIS COMMANDS ARE USED WHEN YOU WANT TO GO AFK (AWAY FROM KEYBOARD).
-
-✮ /afk or brb *:* Normal AFK function.
-
-✮ /mafk *:* Media AFK, Use it and get to know more ;)
-
-For any Type of Queries Join @TITANX_CHAT
-"""
-
 __command_list__ = [
-"afk"
-"mafk"
+    "afk"
+    "mafk"
 ]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
