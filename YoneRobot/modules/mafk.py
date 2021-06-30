@@ -16,7 +16,7 @@ USER_BACK = "https://telegra.ph/file/7a05f54e91f895aac0487.mp4"
 MAFK_REASON_VID = "CgACAgQAAx0CVTtJdwABBjt4YNv3F7bmbzNIFgFccx7ZDhrwVScAAiECAAK6E61Rt4B92ymItZ0gBA"
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
-chosen_vid = random.choice(AFK_REASON_VID)
+chosen_vid = random.choice(MAFK_REASON_VID)
 
 @run_async
 def mafk(update: Update, context: CallbackContext):
