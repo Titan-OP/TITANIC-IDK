@@ -19,7 +19,7 @@ AFK_REPLY_GROUP = 8
 chosen_vid = random.choice(MAFK_REASON_VID)
 
 @run_async
-def mafk(update: Update, context: CallbackContext):
+def afk(update: Update, context: CallbackContext):
     args = update.effective_message.text.split(None, 1)
     user = update.effective_user
 
@@ -53,7 +53,7 @@ def mafk(update: Update, context: CallbackContext):
 
 
 @run_async
-def no_longer_mafk(update: Update, context: CallbackContext):
+def no_longer_afk(update: Update, context: CallbackContext):
     user = update.effective_user
     message = update.effective_message
 
@@ -81,7 +81,7 @@ def no_longer_mafk(update: Update, context: CallbackContext):
 
 
 @run_async
-def reply_mafk(update: Update, context: CallbackContext):
+def reply_afk(update: Update, context: CallbackContext):
     bot = context.bot
     message = update.effective_message
     userc = update.effective_user
@@ -122,7 +122,7 @@ def reply_mafk(update: Update, context: CallbackContext):
                 return
             fst_name = chat.first_name
 
-            check_mafk(update, context, user_id, fst_name, userc_id)
+            check_afk(update, context, user_id, fst_name, userc_id)
 
     elif message.reply_to_message:
         user_id = message.reply_to_message.from_user.id
@@ -130,7 +130,7 @@ def reply_mafk(update: Update, context: CallbackContext):
         check_mafk(update, context, user_id, fst_name, userc_id)
 
 
-def check_mafk(update, context, user_id, fst_name, userc_id):
+def check_afk(update, context, user_id, fst_name, userc_id):
     if sql.is_afk(user_id):
         user = sql.check_afk_status(user_id)
         if int(userc_id) == int(user_id):
@@ -158,9 +158,9 @@ def check_mafk(update, context, user_id, fst_name, userc_id):
 # """
 
 
-AFK_HANDLER = DisableAbleCommandHandler("mafk", mafk)
+AFK_HANDLER = DisableAbleCommandHandler("afk", afk)
 AFK_REGEX_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"^(?i)brb(.*)$"), mafk, friendly="mafk"
+    Filters.regex(r"^(?i)brb(.*)$"), afk, friendly="afk"
 )
 NO_AFK_HANDLER = MessageHandler(Filters.all & Filters.group, no_longer_mafk)
 AFK_REPLY_HANDLER = MessageHandler(Filters.all & Filters.group, reply_mafk)
@@ -171,10 +171,7 @@ dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
 __mod_name__ = "AFK🏃"
-__command_list__ = [
-    "afk"
-    "mafk"
-]
+__command_list__ = ["afk"]
 __handlers__ = [
     AFK_HANDLER, AFK_GROUP,
     AFK_REGEX_HANDLER, AFK_GROUP,
