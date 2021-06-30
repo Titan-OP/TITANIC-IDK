@@ -146,16 +146,16 @@ def check_mafk(update, context, user_id, fst_name, userc_id):
 
 
 
-__help__ = """
+# __help__ = """
 
-*THIS COMMANDS ARE USED WHEN YOU WANT TO GO AFK (AWAY FROM KEYBOARD).*
+# *THIS COMMANDS ARE USED WHEN YOU WANT TO GO AFK (AWAY FROM KEYBOARD).*
 
-✮ /afk or brb *:* Normal AFK function.
+# ✮ /afk or brb *:* Normal AFK function.
 
-✮ /mafk *:* Media AFK, Use it and get to know more ;)
+# ✮ /mafk *:* Media AFK, Use it and get to know more ;)
 
-For any Type of Queries Join @TITANX_CHAT
-"""
+# For any Type of Queries Join @TITANX_CHAT
+# """
 
 
 AFK_HANDLER = DisableAbleCommandHandler("mafk", mafk)
