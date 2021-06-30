@@ -1,3 +1,3 @@
 ## Helpers
 
-Just for help # hehehehehehehehe
+Just for help
