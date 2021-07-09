@@ -24,7 +24,7 @@ async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
+        message.chat.id, f"`Gᴇᴛᴛɪɴɢ {urlissed} ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀꜱ. ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ.`"
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
@@ -61,7 +61,7 @@ async def ytmusic(client, message: Message):
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Vɪᴅᴇᴏ Nᴀᴍᴇ ➠** `{thum}` \n**Rᴇǫᴜᴇsᴛᴇᴅ ғᴏʀ :** `{urlissed}` \n**Cʜᴀɴɴᴇʟ :** `{thums}` \n**Lɪɴᴋ :** `{mo}`"
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
@@ -74,7 +74,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From YouTube Music!`",
+            f"`Uᴘʟᴏᴀᴅɪɴɢ {urlissed} sᴏɴɢ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ᴍᴜsɪᴄ!`",
             file_stark,
         ),
     )
@@ -292,7 +292,7 @@ async def lyrics(client, message):
         os.remove("lyrics.txt")
     else:
         await lel.edit(
-            f"**Search query**: \n`{artist} - {song}`\n\n```{songs.lyrics}```"
+            f"**Sᴇᴀʀᴄʜ ǫᴜᴇʀʏ**: \n`{artist} - {song}`\n\n```{songs.lyrics}```"
         )
     return
 
