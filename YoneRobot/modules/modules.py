@@ -24,13 +24,13 @@ def load(update: Update, context: CallbackContext):
     message = update.effective_message
     text = message.text.split(" ", 1)[1]
     load_messasge = message.reply_text(
-        f"Attempting to load module : <b>{text}</b>", parse_mode=ParseMode.HTML
+        f"ᴀᴛᴛᴇᴍᴘᴛɪɴɢ ᴛᴏ ʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ : <b>{text}</b>", parse_mode=ParseMode.HTML
     )
 
     try:
-        imported_module = importlib.import_module("YoneRobot.modules." + text)
+        imported_module = importlib.import_module("TITAN-2.0.modules." + text)
     except:
-        load_messasge.edit_text("Does that module even exist?")
+        load_messasge.edit_text("ᴅᴏᴇꜱ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ ᴇᴠᴇɴ ᴇxɪꜱᴛ?")
         return
 
     if not hasattr(imported_module, "__mod_name__"):
@@ -39,7 +39,7 @@ def load(update: Update, context: CallbackContext):
     if imported_module.__mod_name__.lower() not in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
-        load_messasge.edit_text("Module already loaded.")
+        load_messasge.edit_text("ᴍᴏᴅᴜʟᴇ ᴀʟʀᴇᴀᴅʏ ʟᴏᴀᴅᴇᴅ.")
         return
     if "__handlers__" in dir(imported_module):
         handlers = imported_module.__handlers__
@@ -55,7 +55,7 @@ def load(update: Update, context: CallbackContext):
                     dispatcher.add_handler(handler_name, priority)
     else:
         IMPORTED.pop(imported_module.__mod_name__.lower())
-        load_messasge.edit_text("The module cannot be loaded.")
+        load_messasge.edit_text("ᴛʜᴇ ᴍᴏᴅᴜʟᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ʟᴏᴀᴅᴇᴅ.")
         return
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
@@ -84,7 +84,7 @@ def load(update: Update, context: CallbackContext):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
     load_messasge.edit_text(
-        "Successfully loaded module : <b>{}</b>".format(text), parse_mode=ParseMode.HTML
+        "ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʟᴏᴀᴅᴇᴅ ᴍᴏᴅᴜʟᴇ : <b>{}</b>".format(text), parse_mode=ParseMode.HTML
     )
 
 
@@ -98,7 +98,7 @@ def unload(update: Update, context: CallbackContext):
     )
 
     try:
-        imported_module = importlib.import_module("YoneRobot.modules." + text)
+        imported_module = importlib.import_module("TITAN-2.0.modules." + text)
     except:
         unload_messasge.edit_text("Does that module even exist?")
         return
@@ -168,7 +168,7 @@ def listmodules(update: Update, context: CallbackContext):
     for helpable_module in HELPABLE:
         helpable_module_info = IMPORTED[helpable_module]
         file_info = IMPORTED[helpable_module_info.__mod_name__.lower()]
-        file_name = file_info.__name__.rsplit("YoneRobot.modules.", 1)[1]
+        file_name = file_info.__name__.rsplit("TITAN-2.0.modules.", 1)[1]
         mod_name = file_info.__mod_name__
         module_list.append(f"- <code>{mod_name} ({file_name})</code>\n")
     module_list = "Following modules are loaded : \n\n" + "".join(module_list)
