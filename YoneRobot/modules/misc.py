@@ -65,12 +65,12 @@ def markdown_help_sender(update: Update):
 def markdown_help(update: Update, context: CallbackContext):
     if update.effective_chat.type != "private":
         update.effective_message.reply_text(
-            "Contact me in pm",
+            "Cᴏɴᴛᴀᴄᴛ Mᴇ Iɴ PM",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "Markdown help",
+                            "Mᴀʀᴋᴅᴏᴡɴ Hᴇʟᴘ ✍",
                             url=f"t.me/{context.bot.username}?start=markdownhelp",
                         )
                     ]
@@ -134,7 +134,7 @@ MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
-__mod_name__ = "Extras"
+__mod_name__ = "Exᴛʀᴀs🔆"
 __command_list__ = ["id", "echo"]
 __handlers__ = [
     ECHO_HANDLER,
