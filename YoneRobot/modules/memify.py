@@ -13,7 +13,7 @@ from telegram import TelegramError, Update
 from telegram.ext import run_async, CallbackContext
 from telegram.utils.helpers import mention_html
 
-from YoneRobotRobot import dispatcher
+from YoneRobot import dispatcher
 from YoneRobot.modules.disable import DisableAbleCommandHandler
 from YoneRobot.events import register as nezuko
 from YoneRobot import TEMP_DOWNLOAD_DIRECTORY
