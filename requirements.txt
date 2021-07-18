@@ -11,12 +11,13 @@ psycopg2-binary
 feedparser
 hachoir
 pynewtonmath
+pykeyboard
 spongemock
 zalgo-text
 geopy
 nltk
 psutil
-aiohttp>=2.2.5
+aiohttp
 Pillow>=4.2.0
 CurrencyConverter
 #googletrans
@@ -66,5 +67,10 @@ textblob
 nudepy
 
 motor
+multicolorcaptcha
+pyUltroid
+moviepy
+python-arq
+gpytranslate
 googletrans
 google_trans_new
