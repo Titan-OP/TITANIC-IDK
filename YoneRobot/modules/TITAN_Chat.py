@@ -69,7 +69,7 @@ async def chat_bot_status(_, message):
             await lel.edit("**AI is Already Enabled In This Chat**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
             return
         await lul.edit(
-            f"**AI Successfully Enabled For this Chat**\n**Check it by reply `Hi` to bot Message**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
+            f"**AI Successfully Enabled For this Chat**\n**Check it by reply `Hi` to bot Message**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
