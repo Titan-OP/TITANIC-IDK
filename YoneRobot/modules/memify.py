@@ -26,7 +26,7 @@ combot_stickers_url = "https://combot.org/telegram/stickers?q="
 Credit = "This Plugin Made by Kittu (@A_viyu), if you're using this code in your bot. there is no issue but don't remove this line" 
 Yoii = "Modified By Techno (@DARK_DEVIL_OP), if you're using this code in your bot. There is no issue but don't remove this line"
 
-@Nezuko(pattern="^/mmf ?(.*)")
+@nezuko(pattern="^/mmf ?(.*)")
 async def handler(event):
     if event.fwd_from:
         return
