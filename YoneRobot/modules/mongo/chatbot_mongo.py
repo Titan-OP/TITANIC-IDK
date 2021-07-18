@@ -1,4 +1,4 @@
-from YoneRobot import mongodb as db_x
+from YoneRobot.mongo import client as db_x
 
 eren = db_x["CHATBOT"]
 
