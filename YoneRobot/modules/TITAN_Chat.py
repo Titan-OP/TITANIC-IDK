@@ -10,11 +10,11 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
-from SaitamaRobot import BOT_ID
-from SaitamaRobot.modules.mongo.chatbot_mongo import add_chat, get_session, remove_chat
-from SaitamaRobot import arq
-from SaitamaRobot.utils.pluginhelp import admins_only, edit_or_reply
-from SaitamaRobot import pbot as eren
+from YoneRobot import BOT_ID
+from YoneRobot.modules.mongo.chatbot_mongo import add_chat, get_session, remove_chat
+from YoneRobot import arq
+from YoneRobot.utils.pluginhelp import admins_only, edit_or_reply
+from YoneRobot import pbot as eren
 
 translator = google_translator()
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
@@ -56,41 +56,43 @@ async def chat_bot_status(_, message):
     global eren_chats
     if len(message.command) != 2:
         await message.reply_text(
-            "I only understand `/chatbot on` and `/chatbot off` only"
+            "**Error**❌\n**No Command Found**\n➖➖➖➖➖➖➖➖➖\n**List Of Command in ChatBot Module:**\n- `/chatbot ON|On|on`\n- `/chatbot OFF|Off|off`\n\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown"
         )
         message.continue_propagation()
     status = message.text.split(None, 1)[1]
     chat_id = message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "**Checking AI..**")
+        lul = await lel.edit("**Enabling AI Chat...**")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("AI Is Already Enabled In This Chat")
+            await lel.edit("**AI is Already Enabled In This Chat**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
             return
-        await lel.edit(
-            f"AI Successfully Enabled For this Chat"
+        await lul.edit(
+            f"**AI Successfully Enabled For this Chat**\n**Check it by reply `Hi` to bot Message**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "**Checking AI..**")
+        lul = await lel.edit("**Disabling AI Chat...**")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("AI Was Not Enabled In This Chat")
+            await lel.edit("**AI Was Not Enabled In This Chat**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
             return
-        await lel.edit(
-            f"Successfully Disabled AI For This Chat"
+        await lul.edit(
+            f"**Successfully Disabled AI For This Chat**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown"
         )
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
             en_chats.append(chat_id)
-            await message.reply_text("English Only AI Enabled!")
+            await message.reply_text("**English Only AI Enabled!\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
             return
-        await message.reply_text("English Only AI Is Already Enabled in this chat.")
+        await message.reply_text("**English Only AI Is Already Enabled in this chat.**\n\n➖➖➖➖➖➖➖\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown")
         message.continue_propagation()
     else:
         await message.reply_text(
-            "I only understand `/chatbot on` and `/chatbot off` only"
+            "**Error**❌\n**No Command Found**\n➖➖➖➖➖➖➖➖➖\n**List Of Command in ChatBot Module:**\n- `/chatbot ON|On|on`\n- `/chatbot OFF|Off|off`\n- `/chatbot EN||en|english`\n\n**For Help Join** [**SUPPORT CHAT**](Https://t.me/TITANX_CHAT).", parse_mode="markdown"
         )
 
 
