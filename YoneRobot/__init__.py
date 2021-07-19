@@ -98,6 +98,8 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
     ARQ_API_URL = "TheARQ.tech"
+    BRAINSHOP_API_KEY = os.environ.get("BRAINSHOP_API_KEY", None)
+    BRAINSHOP_API_URL = os.environ.get("BRAINSHOP_API_URL", None)
     LOG_GROUP_ID = os.environ.get("LOG_GROUP_ID", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
