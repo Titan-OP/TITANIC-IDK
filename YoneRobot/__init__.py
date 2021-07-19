@@ -5,10 +5,10 @@ import time
 import spamwatch
 
 import telegram.ext as tg
+from aiohttp import ClientSession
 from pyrogram import Client, errors
 from telethon import TelegramClient
 from Python_ARQ import ARQ
-
 
 StartTime = time.time()
 
@@ -97,6 +97,8 @@ if ENV:
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
+    ARQ_API_URL = "TheARQ.tech"
+    LOG_GROUP_ID = os.environ.get("LOG_GROUP_ID", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -197,6 +199,8 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("yone", API_ID, API_HASH)
 pbot = Client("yonepbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+aiohttpsession = ClientSession()
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
