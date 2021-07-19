@@ -11,7 +11,7 @@ from googletrans import Translator as google_translator
 from pyrogram import filters
 
 from YoneRobot import BOT_ID
-from YoneRobot.modules.mongo.chatbot_mongo import add_chat, get_session, remove_chat
+from YoneRobot.mongo.chatbot_mongo import add_chat, get_session, remove_chat
 from YoneRobot import arq
 from YoneRobot.utils.pluginhelp import admins_only, edit_or_reply
 from YoneRobot import pbot as eren
