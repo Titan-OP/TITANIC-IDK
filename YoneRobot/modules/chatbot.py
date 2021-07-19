@@ -19,6 +19,9 @@ from YoneRobot import pbot as eren
 translator = google_translator()
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
+BRAINSHOP_API_KEY = 2rqDkE3dOLVkLU3J
+BRAINSHOP_API_URL = http://api.brainshop.ai/get?bid=157935&key=2rqDkE3dOLVkLU3J&uid=
+
 async def lunaQuery(query: str, user_id: int):
     luna = await arq.luna(query, user_id)
     return luna.result
