@@ -355,11 +355,17 @@ async def sasuke(client, message):
         return
 
 __help__ = """
- Chatbot utilizes the Brainshop's API and allows Eren to talk and provides a more interactive group chat experience.
+ Chatbot utilizes the Brainshop's API and allows TITAN to talk and provides a more interactive group chat experience.
  *Admins Only Commands*:
- • `/chatbot [ON/OFF]`: Enables and disables Chatbot mode in the chat.
- • `/chatbot EN` : Enables English only Chatbot mode in the chat.
+
+ ✮ `/chatbot [ON|On|on]`: Enables Chatbot mode in the chat.
+
+ ✮ `/chatbot [OFF|Off|off]`: Disables Chatbot mode in the chat.
+
+ ✮ `/chatbot EN` : Enables English only Chatbot mode in the chat.
+
+➖➖➖➖➖➖➖➖
  *Powered by Brainshop* (brainshop.ai)
 """
 
-__mod_name__ = "ChatBot"
+__mod_name__ = "AI Cʜᴀᴛʙᴏᴛ🤖"
