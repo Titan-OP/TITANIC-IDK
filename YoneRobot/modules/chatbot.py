@@ -10,11 +10,11 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
-from SaitamaRobot import BOT_ID
-from SaitamaRobot.modules.mongo.chatbot_mongo import add_chat, get_session, remove_chat
-from SaitamaRobot import arq
-from SaitamaRobot.utils.pluginhelp import admins_only, edit_or_reply
-from SaitamaRobot import pbot as eren
+from YoneRobot import BOT_ID
+from YoneRobot.helper_extra.aichat import add_chat, get_session, remove_chat
+from YoneRobot import arq
+from YoneRobot.utils.pluginhelp import admins_only, edit_or_reply
+from YoneRobot import pbot as eren
 
 translator = google_translator()
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
