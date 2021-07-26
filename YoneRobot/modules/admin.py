@@ -200,7 +200,7 @@ def refresh_admin(update, _):
     except KeyError:
         pass
 
-    update.effective_message.reply_text("Admins cache refreshed!")
+    update.effective_message.reply_text("**Bot Re-Loaded🤖**\n➖➖➖➖➖➖➖\n**✅Admins cache refreshed!**")
 
 
 @run_async
@@ -262,8 +262,8 @@ def set_title(update: Update, context: CallbackContext):
 
     bot.sendMessage(
         chat.id,
-        f"Sucessfully set title for <code>{user_member.user.first_name or user_id}</code> "
-        f"to <code>{html.escape(title[:16])}</code>!",
+        f"Sucessfully set new Title for <b>{user_member.user.first_name or user_id}</b> "
+        f"\n➖➖➖➖➖➖➖➖\n<b>New Title :</b> <code>{html.escape(title[:16])}</code>",
         parse_mode=ParseMode.HTML,
     )
 
@@ -289,7 +289,7 @@ def setchatpic(update, context):
         else:
             msg.reply_text("You can only set some photo as chat pic!")
             return
-        dlmsg = msg.reply_text("Just a sec...")
+        dlmsg = msg.reply_text("Updating ChatPic...")
         tpic = context.bot.get_file(pic_id)
         tpic.download("gpic.png")
         try:
@@ -348,7 +348,7 @@ def setchat_title(update, context):
     try:
         context.bot.set_chat_title(int(chat.id), str(title))
         msg.reply_text(
-            f"Successfully set <b>{title}</b> as new chat title!",
+            f"Successfully changed the title for current chat\n➖➖➖➖➖➖➖\nNew Title : <b>{title}</b>",
             parse_mode=ParseMode.HTML,
         )
     except BadRequest as excp:
