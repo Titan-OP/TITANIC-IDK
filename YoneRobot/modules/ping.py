@@ -81,7 +81,6 @@ def ping(update: Update, context: CallbackContext):
 
     message.edit_text(
         "PONG!!\n"
-        "〰〰〰〰\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "➖➖➖➖➖➖➖➖\n"
         "<b>Service Up-Time:</b> <code>{}</code>\n\n"
