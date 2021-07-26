@@ -81,8 +81,11 @@ def ping(update: Update, context: CallbackContext):
 
     message.edit_text(
         "PONG!!\n"
+        "〰〰〰〰\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
-        "<b>Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
+        "➖➖➖➖➖➖➖➖\n"
+        "<b>Service Up-Time:</b> <code>{}</code>".format(telegram_ping, uptime)\n\n
+        "ㅤㅤㅤㅤㅤ©𝐓𝐈𝐓𝐀𝐍 𝟐.𝟎",
         parse_mode=ParseMode.HTML,
     )
 
